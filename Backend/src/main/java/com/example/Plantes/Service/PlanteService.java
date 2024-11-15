@@ -16,6 +16,23 @@ public class PlanteService {
     @Autowired
     private PlanteRepository planteRepository;
 
+    public List<Plante> getAllPlantes() {
+        return planteRepository.findAll();
+    }
+
+    public Plante addPlante(Plante plante) {
+        return planteRepository.save(plante);
+    }
+
+    public Plante updatePlante(Long id, Plante plante) {
+        plante.setId(id);
+        return planteRepository.save(plante);
+    }
+
+    public void deletePlante(Long id) {
+        planteRepository.deleteById(id);
+    }
+
     @Autowired
     private CommentaireRepository commentaireRepository;
 
@@ -58,4 +75,8 @@ public class PlanteService {
         // Filtrer les plantes dont les utilisations contiennent le besoin de santé
         return planteRepository.findByUsesContaining(besoinDeSante);
     }
+
+
+
+
 }
