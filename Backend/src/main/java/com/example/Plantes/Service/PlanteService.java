@@ -3,7 +3,7 @@ package com.example.Plantes.Service;
 import com.example.Plantes.Entities.Commentaire;
 import com.example.Plantes.Entities.Plante;
 import com.example.Plantes.Repository.CommentaireRepository;
-import com.example.Plantes.Repository.PlanteRepository;
+import com.example.Plantes.Repository.PlantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,25 +14,7 @@ import java.util.List;
 public class PlanteService {
 
     @Autowired
-    private PlanteRepository planteRepository;
-
-    public List<Plante> getAllPlantes() {
-        return planteRepository.findAll();
-    }
-
-    public Plante addPlante(Plante plante) {
-        return planteRepository.save(plante);
-    }
-
-    public Plante updatePlante(Long id, Plante plante) {
-        plante.setId(id);
-        return planteRepository.save(plante);
-    }
-
-    public void deletePlante(Long id) {
-        planteRepository.deleteById(id);
-    }
-
+    private PlantRepository planteRepository;
     @Autowired
     private CommentaireRepository commentaireRepository;
 
@@ -64,7 +46,7 @@ public class PlanteService {
 
     // Recherche avancée de plantes
     public List<Plante> rechercheAvancee(String nom, List<String> proprietes, List<String> utilisations, String region) {
-        return planteRepository.findByAllIgnoreCase(nom,  proprietes, utilisations,region);
+        return planteRepository.findByAllIgnoreCase(nom, proprietes, utilisations, region);
     }
 
     // Générer des recommandations basées sur un besoin de santé
