@@ -41,35 +41,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.CommentaireControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CommentaireControllerTest.testGetCommentaires_Empty.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.example.Plantes.dto in CataloguePlantes.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CataloguePlantesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/intellijworkspace/CataloguePlantes&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;two.files.diff.last.used.folder&quot;: &quot;D:/intellijworkspace/CataloguePlantes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CataloguePlantesApplication.executor": "Run",
+    "JUnit.CommentaireControllerTest.executor": "Run",
+    "JUnit.CommentaireControllerTest.testGetCommentaires_Empty.executor": "Run",
+    "JUnit.com.example.Plantes.dto in CataloguePlantes.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CataloguePlantesApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/intellijworkspace/CataloguePlantes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "two.files.diff.last.used.folder": "D:/intellijworkspace/CataloguePlantes",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\intellijworkspace\CataloguePlantes\CataloguePlantes\Backend" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CataloguePlantesApplication">
+  <component name="RunManager" selected="Application.CataloguePlantesApplication">
+    <configuration name="CataloguePlantesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.Plantes.CataloguePlantesApplication" />
+      <module name="CataloguePlantes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Plantes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommentaireControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CataloguePlantes" />
       <extension name="coverage">
@@ -125,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CataloguePlantesApplication" />
         <item itemvalue="JUnit.CommentaireControllerTest.testGetCommentaires_Empty" />
         <item itemvalue="JUnit.CommentaireControllerTest" />
         <item itemvalue="JUnit.com.example.Plantes.dto in CataloguePlantes" />
         <item itemvalue="JUnit.CommentaireControllerTest.testGetCommentaires_Empty" />
-        <item itemvalue="JUnit.CommentaireControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,5 +200,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/Plantes/CataloguePlantesApplication.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

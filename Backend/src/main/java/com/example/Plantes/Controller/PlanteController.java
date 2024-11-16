@@ -14,6 +14,11 @@ public class PlanteController {
     @Autowired
     private PlanteService planteService;
 
+    @GetMapping // Handles GET requests to /plantes
+    public List<Plante> getAllPlantes() {
+        return planteService.getAllPlantes();
+    }
+
     // Obtenir les détails d'une plante par ID
     @GetMapping("/{id}")
     public Plante getDetails(@PathVariable Long id) {

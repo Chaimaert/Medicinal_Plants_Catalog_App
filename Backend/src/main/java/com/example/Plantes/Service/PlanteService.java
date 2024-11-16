@@ -18,6 +18,11 @@ public class PlanteService {
     @Autowired
     private CommentaireRepository commentaireRepository;
 
+    public List<Plante> getAllPlantes() {
+        return planteRepository.findAll();
+    }
+
+
     // Obtenir les détails d'une plante par ID
     public Plante getDetails(Long id) {
         // Récupérer la plante par son ID
@@ -57,8 +62,5 @@ public class PlanteService {
         // Filtrer les plantes dont les utilisations contiennent le besoin de santé
         return planteRepository.findByUsesContaining(besoinDeSante);
     }
-
-
-
 
 }
