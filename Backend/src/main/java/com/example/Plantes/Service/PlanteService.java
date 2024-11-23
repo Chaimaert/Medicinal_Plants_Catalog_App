@@ -22,17 +22,12 @@ public class PlanteService {
         return planteRepository.findAll();
     }
 
-
-    // Obtenir les détails d'une plante par ID
     public Plante getDetails(Long id) {
-        // Récupérer la plante par son ID
         Plante plante = planteRepository.findById(id).orElse(null);
         if (plante != null) {
-            // Récupérer les commentaires associés à la plante
             List<Commentaire> commentaires = commentaireRepository.findByPlanteId(id);
             plante.setComments(commentaires);
 
-            // Initialisation des listes si elles sont nulles
             if (plante.getImages() == null) {
                 plante.setImages(new ArrayList<>());
             }
@@ -46,21 +41,46 @@ public class PlanteService {
                 plante.setInteractions(new ArrayList<>());
             }
         }
-        return plante; // Retourner les détails de la plante
+        return plante;
     }
 
-    // Recherche avancée de plantes
     public List<Plante> rechercheAvancee(String nom, List<String> proprietes, List<String> utilisations, String region) {
         return planteRepository.findByAllIgnoreCase(nom, proprietes, utilisations, region);
     }
 
-    // Générer des recommandations basées sur un besoin de santé
     public List<Plante> genererRecommandations(String besoinDeSante) {
         if (besoinDeSante == null || besoinDeSante.trim().isEmpty()) {
-            return new ArrayList<>(); // Retourner une liste vide si le besoin de santé n'est pas spécifié
+            return new ArrayList<>();
         }
-        // Filtrer les plantes dont les utilisations contiennent le besoin de santé
         return planteRepository.findByUsesContaining(besoinDeSante);
     }
 
+    public Plante addPlante(Plante plante) {
+        return planteRepository.save(plante);
+    }
+
+    public Plante updatePlante(Long id, Plante planteDetails) {
+        Plante existingPlante = planteRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Plant not found with ID: " + id));
+
+        existingPlante.setName(planteDetails.getName());
+        existingPlante.setDescription(planteDetails.getDescription());
+        existingPlante.setProperties(planteDetails.getProperties());
+        existingPlante.setUses(planteDetails.getUses());
+        existingPlante.setRegion(planteDetails.getRegion());
+        existingPlante.setImages(planteDetails.getImages());
+        existingPlante.setVideos(planteDetails.getVideos());
+        existingPlante.setPrecautions(planteDetails.getPrecautions());
+        existingPlante.setInteractions(planteDetails.getInteractions());
+
+        return planteRepository.save(existingPlante);
+    }
+
+    public void deletePlante(Long id) {
+        if (!planteRepository.existsById(id)) {
+            throw new RuntimeException("Plant not found with ID: " + id);
+        }
+        planteRepository.deleteById(id);
+    }
 }
+

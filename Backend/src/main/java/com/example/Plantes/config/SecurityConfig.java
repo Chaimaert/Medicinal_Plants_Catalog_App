@@ -2,7 +2,12 @@ package com.example.Plantes.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -13,8 +18,30 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // Disable CSRF for simplicity
                 .authorizeHttpRequests(auth -> auth
-                        .anyRequest().permitAll() // Allow unrestricted access to all endpoints
+                        .requestMatchers("/admin/**").hasRole("ADMIN") // Restrict access to ADMIN role
+                        .requestMatchers("/plantes/**").permitAll()    // Allow public access to plant-related endpoints
+                )
+                .httpBasic(Customizer.withDefaults()) // Enable Basic Authentication
+                .logout(logout -> logout
+                        .logoutUrl("/logout")
+                        .logoutSuccessUrl("/login")
+                        .permitAll()
                 );
         return http.build();
+    }
+
+    @Bean
+    public InMemoryUserDetailsManager userDetailsManager(PasswordEncoder encoder) {
+        return new InMemoryUserDetailsManager(
+                User.withUsername("admin")
+                        .password(encoder.encode("admin123")) // Hardcoded admin credentials
+                        .roles("ADMIN") // Define ADMIN role
+                        .build()
+        );
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 }
