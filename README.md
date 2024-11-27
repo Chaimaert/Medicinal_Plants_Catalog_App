@@ -82,6 +82,10 @@ Here is a summary of the main API endpoints:
 | PUT | /api/plants/{id}     | Update a plant by ID |
 | DELETE | /api/plants/{id}     | Delete a plant by ID |
 
+### Notes
+
+  - *Admin Endpoints (/admin/plantes)*: These endpoints are restricted to the ADMIN role. Make sure to authenticate as an Admin before using them.
+  - *Public Endpoints (/plantes)*: These endpoints are accessible to all users without authentication.
 
 Contact
 For questions or feedback, feel free to reach out via GitHub Issues or mail.
