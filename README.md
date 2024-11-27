@@ -89,5 +89,5 @@ Here is a summary of the main API endpoints:
   - *Public Endpoints (/plantes)*: These endpoints are accessible to all users without authentication.
 
 
-## Contact
+### Contact
 For questions or feedback, feel free to reach out via GitHub Issues or mail.
