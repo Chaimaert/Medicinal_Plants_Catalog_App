@@ -5,6 +5,7 @@ A comprehensive medicinal plants catalog application developed with a Spring Boo
 ## Table of Contents
 - [Features](#features)
 - [Technologies](#technologies)
+- [Conception](#concception)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,6 +23,17 @@ A comprehensive medicinal plants catalog application developed with a Spring Boo
   - *Frontend*: Angular Material
   - *Mobile App*: Flutter
   - *Database*: MySQL
+    
+## Conception
+
+ - Use Case Diagram
+
+![useCase_diag](https://github.com/user-attachments/assets/a7574db2-4d65-4cc3-8184-de2e96c1d5f9)
+
+ - Class Diagram
+
+![class_diag](https://github.com/user-attachments/assets/e50c5b46-6376-4345-85c1-263a8902eb7f)
+
 
 ## Getting Started
 These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
@@ -36,7 +48,7 @@ These instructions will help you get a copy of the project up and running on you
 #### Backend
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Chaimaert/Medicinal_Plants_Catalog_App.git
 
 2. Navigate to the backend directory and configure your database connection in application.properties:
     - spring.datasource.url=jdbc:mysql://localhost:3306/your-database-name
@@ -68,8 +80,6 @@ Here is a summary of the main API endpoints:
 | PUT    | /api/plants/{id}     | Update a plantplants's details|
 | DELETE | /api/plants/{id}     | Delete a plant                |
 
-> *Note*: For full API documentation, refer to the docs/api folder.
-
 
 Contact
-For questions or feedback, feel free to reach out via GitHub Issues or connect with the repository maintainer.
+For questions or feedback, feel free to reach out via GitHub Issues or mail.
