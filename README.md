@@ -75,10 +75,12 @@ Here is a summary of the main API endpoints:
 
 | Method | Endpoint           | Description                  |
 |--------|---------------------|------------------------------|
-| GET    | /api/plants          | Get all tasks for a user     |
-| POST   | /api/plants          | Create a new task            |
-| PUT    | /api/plants/{id}     | Update a plantplants's details|
-| DELETE | /api/plants/{id}     | Delete a plant                |
+| GET    | /plantes          | Get all plants     |
+| GET    | /plantes/{id}     | Get  plant by ID |
+| GET    | /admin/plantes     | Get all plants|
+| POST   | /admin/plants          | Add a new plant  |
+| PUT | /api/plants/{id}     | Update a plant by ID |
+| DELETE | /api/plants/{id}     | Delete a plant by ID |
 
 
 Contact
