@@ -78,7 +78,7 @@ Here is a summary of the main API endpoints:
 | GET    | /plantes          | Get all plants     |
 | GET    | /plantes/{id}     | Get  plant by ID |
 | GET    | /admin/plantes     | Get all plants|
-| POST   | /admin/plants          | Add a new plant  |
+| POST   | /admin/plantes          | Add a new plant  |
 | PUT | /api/plants/{id}     | Update a plant by ID |
 | DELETE | /api/plants/{id}     | Delete a plant by ID |
 
@@ -87,5 +87,6 @@ Here is a summary of the main API endpoints:
   - *Admin Endpoints (/admin/plantes)*: These endpoints are restricted to the ADMIN role. Make sure to authenticate as an Admin before using them.
   - *Public Endpoints (/plantes)*: These endpoints are accessible to all users without authentication.
 
-Contact
+
+##" Contact
 For questions or feedback, feel free to reach out via GitHub Issues or mail.
