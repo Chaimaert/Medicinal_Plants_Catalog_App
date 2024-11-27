@@ -1,0 +1,122 @@
+/* Home Page Container */
+.home-page {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Take full width */
+  max-width: 1669px; /* Limit the maximum width of the navbar */
+  padding: 15px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 0px;
+  margin: 0 auto; /* Center the navbar */
+}
+
+.brand-name {
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  max-width: 300px; /* Limit brand name width */
+}
+
+.brand-name i {
+  margin-right: 10px;
+  font-size: 32px;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 20px;
+  max-width: 500px; /* Limit navbar buttons width */
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.nav-button {
+  background: none;
+  border: 2px solid rgb(252, 252, 252);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #388E3C;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 50px;
+  margin-top: 30px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #555;
+}
+
+.hero-image img {
+  max-width: 650px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Button */
+.main-button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #388E3C;
+}
+
+/* Footer Section */
+.footer {
+  width: 100%; /* Make the footer span the full width of the page */
+  text-align: center; /* Center-align the text content */
+  background-color: #4CAF50; /* Match the navbar color */
+  color: white; /* Ensure the text is visible */
+  padding: 10px 0; /* Add some vertical spacing */
+  position: relative; /* Ensure it doesn't overlap other content */
+  margin-top: 37px; /* Add spacing from content above */
+  font-size: 14px; /* Adjust font size for readability */
+  border-radius: 0px;
+}

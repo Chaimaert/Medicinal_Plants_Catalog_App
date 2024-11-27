@@ -1,0 +1,134 @@
+/* Style for the admin dashboard page */
+.admin-dashboard {
+    padding: 20px;
+    
+  }
+  
+  .plant-list {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .plant-list th, .plant-list td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .plant-list th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .plant-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .plant-list td button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .plant-list td button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-plant-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-plant-button:hover {
+    background-color: #218838;
+  }
+
+  button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button i {
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+button:hover i {
+  color: #007bff; /* Blue color on hover */
+}
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #e2f10b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-plant-btn {
+    background-color: #28a745; /* Green color for Add Plant button */
+    margin-top: 30px;
+    width: 150px; /* Fixed width for the buttons */
+    margin-bottom: 30px; /* Space between buttons */
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    top: 10%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+  }
+  
+  .add-plant-btn:hover {
+    background-color: #218838;
+    
+  }
+  
+  .logout-btn {
+    background-color: #dc3545; /* Red color for Logout button */
+    margin-top: 30px;
+    width: 150px; /* Fixed width for the buttons */
+    margin-bottom: 30px; /* Space between buttons */
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    top: 10%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+  
+  }
+  
+  .logout-btn:hover {
+    background-color: #c82333;
+  }
+  
+
+  

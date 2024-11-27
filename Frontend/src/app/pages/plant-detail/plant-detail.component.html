@@ -1,0 +1,54 @@
+<div class="plant-details" *ngIf="plant">
+  <h2>{{ plant?.name }}</h2>
+  <img [src]="plant?.image" alt="{{ plant?.name }}" />
+  <p>{{ plant?.Description }}</p>
+
+  <h4>Precaution:</h4>
+  <p>{{ plant?.precaution }}</p>
+
+  <h4>Article ( for more details ):</h4>
+  <p><a href="{{ plant?.articles }}" target="_blank">{{ plant?.articles }}</a></p>
+
+  <h4>Region:</h4>
+  <p>{{ plant?.region }}</p>
+
+  <h4>Uses:</h4>
+  <p>{{ plant?.uses }}</p>
+
+  <h4>Video:</h4>
+  <div class="video-container">
+    <video width="320" height="240" controls>
+      <source [src]="plant?.video" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <h4>Properties:</h4>
+  <p>{{ plant?.properties }}</p>
+
+  <h4>Comments:</h4>
+  <ul>
+    <li *ngFor="let comment of plant?.comments">{{ comment }}</li>
+  </ul>
+
+  <!-- Add comment form -->
+  <div class="add-comment">
+    <h4>Add a Comment</h4>
+    <input
+      type="text"
+      [(ngModel)]="newCommentUsername"
+      placeholder="Enter your name"
+      class="comment-input"
+    />
+    <textarea
+      [(ngModel)]="newCommentText"
+      placeholder="Write your comment..."
+      class="comment-textarea"
+    ></textarea>
+    <button (click)="addComment()">Submit Comment</button>
+  </div>
+</div>
+
+<div *ngIf="!plant">
+  <p>Plant not found.</p>
+</div>

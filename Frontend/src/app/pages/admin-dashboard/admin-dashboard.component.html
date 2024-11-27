@@ -1,0 +1,40 @@
+<!-- Add Plant and Logout Buttons -->
+<div class="admin-actions">
+    <button (click)="addPlant()" class="add-plant-btn">Add Plant</button>
+    <button (click)="logout()" class="logout-btn">Logout</button>
+  </div>
+  
+  <!-- Plant List Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plant of plants">
+        <!-- First column: Image -->
+        <td>
+          <img [src]="plant.image" alt="{{ plant.name }}" width="100">
+        </td>
+  
+        <!-- Second column: Name -->
+        <td>{{ plant.name }}</td>
+  
+        <!-- Third column: Actions -->
+        <td>
+          <!-- Edit and Delete icons -->
+          <!-- Simplified Edit Button -->
+          <button (click)="editPlant(plant.id)" title="Edit">
+            <i class="fas fa-edit"></i> <!-- Paper and pen icon for editing -->
+          </button>
+          <button (click)="deletePlant(plant.id)" title="Delete">
+            <i class="fas fa-trash-alt"></i> <!-- Trash bin icon for deleting -->
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

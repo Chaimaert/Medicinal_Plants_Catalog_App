@@ -1,0 +1,71 @@
+<div class="add-plant-form">
+    <form (ngSubmit)="editPlant()">
+      <h2>Edit Plant</h2>
+  
+      <!-- Plant Name -->
+      <div>
+        <label for="name">Plant Name:</label>
+        <input type="text" id="name" [(ngModel)]="plantData.name" name="name" required>
+      </div>
+  
+      <!-- Description -->
+      <div>
+        <label for="description">Description:</label>
+        <textarea id="description" [(ngModel)]="plantData.description" name="description" required></textarea>
+      </div>
+  
+      <!-- Articles (URL) -->
+      <div>
+        <label for="articles">Articles (URL):</label>
+        <input type="text" id="articles" [(ngModel)]="plantData.articles" name="articles">
+      </div>
+  
+      <!-- Comments -->
+      <div>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" [(ngModel)]="plantData.comments" name="comments"></textarea>
+      </div>
+  
+      <!-- Precautions -->
+      <div>
+        <label for="precautions">Precautions:</label>
+        <textarea id="precautions" [(ngModel)]="plantData.precautions" name="precautions"></textarea>
+      </div>
+  
+      <!-- Properties -->
+      <div>
+        <label for="properties">Properties:</label>
+        <textarea id="properties" [(ngModel)]="plantData.properties" name="properties"></textarea>
+      </div>
+  
+      <!-- Region -->
+      <div>
+        <label for="region">Region:</label>
+        <input type="text" id="region" [(ngModel)]="plantData.region" name="region">
+      </div>
+  
+      <!-- Uses -->
+      <div>
+        <label for="uses">Uses:</label>
+        <input type="text" id="uses" [(ngModel)]="plantData.uses" name="uses">
+      </div>
+  
+      <!-- Image Upload -->
+      <div>
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" (change)="onFileSelected($event, 'images')" name="image">
+      </div>
+  
+      <!-- Video Upload -->
+      <div>
+        <label for="video">Upload Video:</label>
+        <input type="file" id="video" (change)="onFileSelected($event, 'video')" name="video">
+      </div>
+  
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button type="submit">Save Changes</button>
+      </div>
+    </form>
+  </div>
+  

@@ -1,0 +1,42 @@
+<div class="recommendation-container">
+  <div class="form-section">
+    <div class="title-container">
+      <h2 class="main-title">Trouver des Plantes selon vos Besoins</h2>
+    </div>
+
+    <!-- Form: Trouver des Plantes selon vos Besoins -->
+    <form (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="besoins-de-sante">Besoins de Santé:</label>
+        <input type="text" id="besoins-de-sante" [(ngModel)]="formData.besoinsDeSante" name="besoinsDeSante" placeholder="Ex: Stress, Énergie" required>
+      </div>
+      <div class="form-group">
+        <label for="preferences">Préférences:</label>
+        <input type="text" id="preferences" [(ngModel)]="formData.preferences" name="preferences" placeholder="Ex: Plantes locales">
+      </div>
+      <div class="form-group">
+        <label for="antecedents-medicaux">Antécédents Médicaux:</label>
+        <input type="text" id="antecedents-medicaux" [(ngModel)]="formData.antecedentsMedicaux" name="antecedentsMedicaux" placeholder="Ex: Allergies">
+      </div>
+      <button type="submit">Obtenir Résultat</button>
+    </form>
+
+    <!-- Result Section: Display plant details after form submission -->
+    <div *ngIf="plantResult" class="result-container">
+      <h3 class="plant-title">Plante Recommandée: {{ plantResult.name }}</h3>
+      
+      <div class="plant-details">
+        <img [src]="plantResult.image" alt="{{ plantResult.name }}" class="plant-image" />
+        
+        <div class="plant-info">
+          <p><strong>Propriétés:</strong> {{ plantResult.properties }}</p>
+          <p><strong>Utilisations:</strong> {{ plantResult.uses }}</p>
+          <p><strong>Région:</strong> {{ plantResult.region }}</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- No Result Message -->
+  </div>
+</div>

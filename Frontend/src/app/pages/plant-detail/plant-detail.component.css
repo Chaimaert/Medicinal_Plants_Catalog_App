@@ -1,0 +1,249 @@
+/* General Styling for Plant Details */
+.plant-details {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 40px;
+  background:  #d5f8cb;
+  border-radius: 15px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title Styling - Beautiful, Elegant */
+.plant-details h2 {
+  text-align: center;
+  font-size: 44px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.plant-details h2:after {
+  content: '...';
+  font-size: 36px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #1abc9c;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Section Titles */
+.plant-details h4 {
+  font-size: 24px;
+  color: #656665;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left;
+  position: relative;
+  padding-left: 30px;
+}
+
+.plant-details h4:before {
+  content: '\2022'; /* Unicode bullet */
+  color: #1abc9c;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Image Styling */
+.plant-details img {
+  display: block; /* Makes the image a block element */
+  margin: 0 auto; /* Centers the block element horizontally */
+  width: 70%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.plant-details img:hover {
+  transform: scale(1.05);
+}
+
+/* General Paragraph Styling */
+.plant-details p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #141414;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Comment List Styling */
+.plant-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.plant-details ul li {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.plant-details ul li:before {
+  content: '\2022'; /* Unicode for bullet */
+  color: #1abc9c;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Comment Form Styling */
+.add-comment {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: #ecf0f1;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.add-comment:hover {
+  background-color: #e3e7eb;
+}
+
+.add-comment h4 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Input and Textarea Fields */
+.comment-input,
+.comment-textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fafafa;
+  color: #34495e;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.comment-input:focus,
+.comment-textarea:focus {
+  border-color: #1abc9c;
+  background-color: #f1f1f1;
+  outline: none;
+}
+
+.comment-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 14px 28px;
+  background-color: #28a745;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+}
+
+button:active {
+  background-color: #1abc9c;
+  transform: translateY(1px);
+}
+
+/* Article Link Styling */
+.plant-details a {
+  color: #1abc9c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.plant-details a:hover {
+  color: #16a085;
+  text-decoration: underline;
+}
+
+/* Video Container Styling */
+.video-container {
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 4px solid #1abc9c;
+  transition: transform 0.3s ease;
+}
+
+video:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .plant-details {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .plant-details h2 {
+    font-size: 32px;
+  }
+
+  .plant-details h4 {
+    font-size: 20px;
+  }
+
+  .add-comment {
+    padding: 20px;
+  }
+
+  .comment-input,
+  .comment-textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  video {
+    max-width: 100%;
+  }
+}
