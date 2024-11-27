@@ -1,6 +1,7 @@
 # Medicinal Plants Catalog 🌿
 
-A comprehensive medicinal plants catalog application developed with a Spring Boot backend, an Angular web frontend, and a Flutter mobile app. This project aims to provide detailed insights into medicinal plants, including their properties, uses, and safety precautions.It provides users with access to an extensive database of medicinal plants. Users can explore plant properties, discover safe usage methods, view multimedia content, and receive personalized recommendations.
+A comprehensive medicinal plants catalog application developed with a Spring Boot backend, an Angular web frontend, and a Flutter mobile app. 
+This project aims to provide detailed insights into medicinal plants, including their properties, uses, and safety precautions.It provides users with access to an extensive database of medicinal plants. Users can explore plant properties, discover safe usage methods, view multimedia content, and receive personalized recommendations.
 
 ## Table of Contents
 - [Features](#features)
