@@ -21,7 +21,7 @@ A comprehensive medicinal plants catalog application developed with a Spring Boo
 ## Technologies
   - *Backend*: Spring Boot, Spring Security, MySQL
   - *Frontend*: Angular Material
-  - *Mobile App*: Flutter
+  - *Mobile App*: Flutter, Firebase
   - *Database*: MySQL
     
 ## Conception
