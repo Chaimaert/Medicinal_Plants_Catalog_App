@@ -19,7 +19,7 @@ public class PlanteService {
     private CommentaireRepository commentaireRepository;
 
     public List<Plante> getAllPlantes() {
-        return planteRepository.findAll();
+        return planteRepository.findAll(); // Ensure proper data retrieval
     }
 
     public Plante getDetails(Long id) {

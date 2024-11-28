@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5d2583-28b0-460b-b24d-789bbe61b791" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/AdminPlanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/AdminPlanteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminPlanteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminPlanteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/RecommandationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/RecommandationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Repository/PlantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Repository/PlantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Service/PlanteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Service/PlanteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/RecommandationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/RecommandationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/services/plant.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/services/plant.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +58,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2oLR59PVqM26BMbVYkuHkINCGcm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
