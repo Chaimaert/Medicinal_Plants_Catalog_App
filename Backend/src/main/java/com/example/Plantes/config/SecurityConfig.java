@@ -18,7 +18,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // Disable CSRF for simplicity
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/admin/**").hasRole("ADMIN") // Restrict access to ADMIN role
+                        .requestMatchers("/admin/**").hasRole("ADMIN") // Protect admin endpoints
                         .requestMatchers("/plantes/**").permitAll()    // Allow public access to plant-related endpoints
                 )
                 .httpBasic(Customizer.withDefaults()) // Enable Basic Authentication

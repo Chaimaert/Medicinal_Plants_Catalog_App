@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e5d2583-28b0-460b-b24d-789bbe61b791" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/CataloguePlantesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/CataloguePlantesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/CataloguePlantesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/CataloguePlantesApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/CommentaireController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/CommentaireController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/PlanteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/PlanteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/RecommandationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/RecommandationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Commentaire$CommentaireBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Commentaire$CommentaireBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Commentaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Commentaire.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Plante$PlanteBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Plante$PlanteBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Plante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Plante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Repository/CommentaireRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Repository/CommentaireRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Repository/PlantRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Repository/PlantRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/CommentaireService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/CommentaireService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/PlanteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/PlanteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/RecommandationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/RecommandationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/dto/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/dto/UserRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/AdminPlanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/AdminPlanteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminPlanteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminPlanteController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

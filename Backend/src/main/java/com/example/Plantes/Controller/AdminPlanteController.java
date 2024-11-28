@@ -17,6 +17,12 @@ public class AdminPlanteController {
         this.planteService = planteService;
     }
 
+    @GetMapping("/admin/test-unrestricted")
+    public ResponseEntity<String> testUnrestricted() {
+        return ResponseEntity.ok("Unrestricted Admin Access!");
+    }
+
+
     @GetMapping
     public ResponseEntity<List<Plante>> getAllPlantes() {
         return ResponseEntity.ok(planteService.getAllPlantes());
