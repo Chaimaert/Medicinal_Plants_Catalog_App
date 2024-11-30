@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PlanteService {
@@ -81,6 +82,10 @@ public class PlanteService {
             throw new RuntimeException("Plant not found with ID: " + id);
         }
         planteRepository.deleteById(id);
+    }
+
+    public Optional<Plante> findById(Long id) {
+        return planteRepository.findById(id);
     }
 }
 

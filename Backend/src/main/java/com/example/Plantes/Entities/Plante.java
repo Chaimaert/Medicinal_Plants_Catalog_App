@@ -1,5 +1,7 @@
 package com.example.Plantes.Entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -37,6 +39,7 @@ public class Plante {
     private List<String> interactions; // Interactions
 
     @OneToMany(mappedBy = "plante") // Relation One-to-Many avec Commentaire
+    @JsonManagedReference
     private List<Commentaire> comments;
 
     @ElementCollection

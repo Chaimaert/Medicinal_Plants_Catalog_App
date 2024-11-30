@@ -1,5 +1,6 @@
 package com.example.Plantes.Entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,13 +14,14 @@ import lombok.*;
 public class Commentaire {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // Identifiant unique du commentaire
+    private Long id;
 
-    private String nom; // Nom de l'utilisateur qui a laissé le commentaire
+    private String nom;
     private String email; // Email de l'utilisateur (optionnel)
-    private String contenu; // Contenu du commentaire
+    private String contenu;
 
     @ManyToOne // Relation Many-to-One avec Plante
-    @JoinColumn(name = "plante_id") // Clé étrangère vers la table Plante
+    @JoinColumn(name = "plante_id")
+    @JsonBackReference
     private Plante plante; // La plante associée à ce commentaire
 }
