@@ -1,116 +1,136 @@
 /* Main Container for the Add Plant Form */
 .add-plant-form {
-    width: 70%;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #e9ffe2 !important; /* Force background color change */
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #5fc75d, #d9f1d8); /* Force background color change */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.add-plant-form h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form Field Divs */
+.add-plant-form > div {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Label Styling */
+.add-plant-form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* Input and Textarea Fields */
+.add-plant-form input,
+.add-plant-form textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #8ad49a;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+  background-color:  #ffffff !important; /* Force background color change */
+}
+
+/* Textarea Styling */
+.add-plant-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Input Focus Effect */
+.add-plant-form input:focus,
+.add-plant-form textarea:focus {
+  border-color: #1abc9c;
+  outline: none;
+  background-color:  #f7f2f2 !important; /* Force focus background color change */
+}
+
+/* File Input Section */
+.add-plant-form input[type="file"] {
+  padding: 8px;
+  background-color: #ffffff !important;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Submit Button */
+.add-plant-form button {
+  padding: 12px 24px;
+  background-color: #89c284;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-plant-form button:hover {
+  background-color: #16a085;
+  transform: translateY(-2px);
+}
+
+.add-plant-form button:active {
+  background-color: #1abc9c;
+  transform: translateY(0);
+}
+
+/* Add a subtle margin to the button for spacing */
+.add-plant-form .form-actions {
+  margin-top: 20px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .add-plant-form {
+    width: 90%;
   }
-  
-  /* Title Styling */
+
   .add-plant-form h2 {
-    text-align: center;
-    color: #2c3e50;
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 24px;
   }
-  
-  /* Form Field Divs */
-  .add-plant-form > div {
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  /* Label Styling */
-  .add-plant-form label {
-    font-size: 16px;
-    font-weight: 600;
-    color: #34495e;
-  }
-  
-  /* Input and Textarea Fields */
+
   .add-plant-form input,
   .add-plant-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #8ad49a;
-    border-radius: 8px;
-    font-size: 15px;
-    transition: border-color 0.3s;
-    background-color:  #ffffff !important; /* Force background color change */
+    font-size: 16px;
   }
-  
-  /* Textarea Styling */
-  .add-plant-form textarea {
-    min-height: 120px;
-    resize: vertical;
-  }
-  
-  /* Input Focus Effect */
-  .add-plant-form input:focus,
-  .add-plant-form textarea:focus {
-    border-color: #1abc9c;
-    outline: none;
-    background-color:  #f7f2f2 !important; /* Force focus background color change */
-  }
-  
-  /* File Input Section */
-  .add-plant-form input[type="file"] {
-    padding: 8px;
-    background-color: #ffffff !important;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  /* Submit Button */
+
   .add-plant-form button {
-    padding: 12px 24px;
-    background-color: #89c284;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
   }
-  
-  .add-plant-form button:hover {
-    background-color: #16a085;
-    transform: translateY(-2px);
-  }
-  
-  .add-plant-form button:active {
-    background-color: #1abc9c;
-    transform: translateY(0);
-  }
-  
-  /* Add a subtle margin to the button for spacing */
-  .add-plant-form .form-actions {
-    margin-top: 20px;
-  }
-  
-  /* Responsive Design for Smaller Screens */
-  @media screen and (max-width: 768px) {
-    .add-plant-form {
-      width: 90%;
-    }
-  
-    .add-plant-form h2 {
-      font-size: 24px;
-    }
-  
-    .add-plant-form input,
-    .add-plant-form textarea {
-      font-size: 16px;
-    }
-  
-    .add-plant-form button {
-      font-size: 16px;
-    }
-  }
-  
+}
+
+.success-message {
+  background-color: #577ec7;
+  color: white;
+  padding: 35px;
+  margin: 20%;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  animation: fadeOut 3s ease-out;
+}
+
+/* Optional animation to fade out the success message */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+

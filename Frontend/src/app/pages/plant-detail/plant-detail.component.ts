@@ -22,27 +22,28 @@ export class PlantDetailsComponent implements OnInit {
     // Simulated static data for now
     this.plant = {
       name: 'Aloe Vera',
-      image: 'assets/plant5.jpg',
-      Description: 'Aloe vera is a succulent plant species...',
-      precaution: 'Avoid excessive consumption.',
-      articles: 'https://example.com/aloe-vera-articles',
+      image: 'assets/AV.jpg',
+      Description: 'Aloe vera est une espèce en région méditerranéenne, en Afrique du Nord, aux îles Canaries et au Cap-Vert.',
+      precaution: 'Avoid excessive consumption .Conserver au réfrigérateur.  Éviter sur la peau irritée ou abîmée',
+      articles: 'https://www.dieti-natura.com/plantes-actifs/aloe-vera.html',
       region: 'Africa, Asia',
       uses: 'Used for skin care, burns, and more.',
-      video: 'assets/aloe-vera.mp4',
+      video: 'assets/Av.mp4',
       properties: 'Anti-inflammatory, antimicrobial.',
-      comments: ['Great for skin care!', 'Helps with burns.']
+      comments: [
+        { username: 'Inass', text: 'Great for skin care!' },
+        { username: 'Leila', text: 'Helps with burns.' }
+      ]
     };
-    
-    // Once backend is ready, replace the static data with a real HTTP call like:
-    // this.plantService.getPlantById(plantId).subscribe(data => {
-    //   this.plant = data;
-    // });
   }
 
   addComment() {
     // Handle adding comment logic (e.g., updating the database)
     if (this.newCommentUsername && this.newCommentText) {
-      this.plant.comments.push(this.newCommentText);
+      this.plant.comments.push({
+        username: this.newCommentUsername,
+        text: this.newCommentText
+      });
       this.newCommentUsername = '';
       this.newCommentText = '';
     }

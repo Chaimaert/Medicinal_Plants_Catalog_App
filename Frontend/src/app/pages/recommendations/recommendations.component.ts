@@ -19,11 +19,11 @@ export class RecommendationComponent {
   // Static plant data with images
   staticPlants = [
     {
-      name: 'Lavande',
+      name: 'Lavandar',
       properties: 'Apaisant, Relaxant',
       uses: 'Infusion, Huile essentielle',
       region: 'Méditerranée',
-      image: 'assets/plant7.jpg' // Static image URL for Lavande
+      image: 'assets/lavendar.jpg' // Static image URL for Lavande
     },
     {
       name: 'Camomille',

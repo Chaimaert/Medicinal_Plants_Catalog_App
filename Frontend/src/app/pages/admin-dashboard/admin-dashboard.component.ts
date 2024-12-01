@@ -12,7 +12,7 @@ export class AdminDashboardComponent implements OnInit {
   plants: any[] = [
     {
       id: 1,
-      image: 'assets/plant1.jpg',
+      image: 'assets/AV.jpg',
       name: 'Aloe Vera', 
     },
     {
@@ -22,12 +22,24 @@ export class AdminDashboardComponent implements OnInit {
     },
     {
       id: 3,
-      image: 'assets/plant5.jpg',
-      name: 'Mint', 
+      image: 'assets/lavendar.jpg',
+      name: 'Lavendar', 
     },
     {
-      image: 'assets/plant7.jpg',
-      name: 'Mint', 
+      image: 'assets/calendula.jpg',
+      name: 'Calendula', 
+    },
+    {
+      image: 'assets/chamomile.jpg',
+      name: 'Chamomile', 
+    },
+    {
+      image: 'assets/tumeric.jpg',
+      name: 'Tumeric', 
+    },
+    {
+      image: 'assets/roseamry.jpg',
+      name: 'Rosemary', 
     },
   ];
 
@@ -59,11 +71,9 @@ export class AdminDashboardComponent implements OnInit {
   
   
 
-  // Delete a plant (convert id to string)
-  deletePlant(id: number) {
-    this.plantService.deletePlant(id.toString()).subscribe(() => { // Convert id to string
-      this.loadPlants(); // Reload the plant list after deletion
-    });
+   // Delete plant
+   deletePlant(id: number) {
+    this.plants = this.plants.filter(plant => plant.id !== id);
   }
 
   // Logout

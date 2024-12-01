@@ -94,7 +94,7 @@
   align-items: center; /* Center the form vertically */
   padding: 30px;
   background: linear-gradient(to right, #ffffff, #ffffff);
-  height: 80vh;
+  height: 68vh;
   overflow-y: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -102,7 +102,7 @@
 /* Individual Form Section */
 .form-section {
   padding: 50px;
-  background: #e9ffe2;
+  background: linear-gradient(145deg, #7cf07a, #d9f1d8);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   border-radius: 40px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;

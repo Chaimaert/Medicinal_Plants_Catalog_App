@@ -17,8 +17,8 @@
   align-items: center;
   width: 100%; /* Take full width */
   max-width: 1669px; /* Limit the maximum width of the navbar */
-  padding: 15px 20px;
-  background-color: #4CAF50;
+  padding: 12px 20px;
+  background-color: #43a740;
   color: white;
   border-radius: 0px;
   margin: 0 auto; /* Center the navbar */
@@ -112,9 +112,9 @@
 .footer {
   width: 100%; /* Make the footer span the full width of the page */
   text-align: center; /* Center-align the text content */
-  background-color: #4CAF50; /* Match the navbar color */
+  background-color: #43a740; /* Match the navbar color */
   color: white; /* Ensure the text is visible */
-  padding: 10px 0; /* Add some vertical spacing */
+  padding: 12px 0; /* Add some vertical spacing */
   position: relative; /* Ensure it doesn't overlap other content */
   margin-top: 37px; /* Add spacing from content above */
   font-size: 14px; /* Adjust font size for readability */

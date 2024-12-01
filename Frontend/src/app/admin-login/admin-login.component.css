@@ -5,11 +5,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 76vh;
     background: linear-gradient(145deg, #ffffff, #ffffff);  /* Lush green gradient background */
     position: relative;
     overflow: hidden;
     z-index: 1;
+    margin-top: 0; /* Remove any space above */
+    margin-bottom: 0; /* Remove any space below */
+    padding-top: 0; /* Remove any padding above */
+    padding-bottom: 0; /* Remove any padding below */
 }
 
 /* Creating the falling plant icons with more dynamic animation */
@@ -50,20 +54,21 @@
 
 /* Login Box Styling */
 .login-box {
-    background: linear-gradient(145deg, #ffffff, #f0f8e9); /* Smooth white to soft green gradient */
-    border-radius: 20px; /* Ultra-rounded corners for a modern look */
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
-    width: 420px;
-    padding: 60px;
+    background: linear-gradient(145deg, #85f183, #d9f1d8); /* Smooth white to soft green gradient */
+    border-radius: 15px; /* Reduced rounded corners for a less "bulky" look */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Softer shadow for a less intense effect */
+    width: 380px; /* Smaller width */
+    padding: 40px; /* Reduced padding */
     text-align: center;
     position: relative;
     z-index: 2;
-    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 0 auto; /* Ensures it stays centered */
 }
 
 /* Enhanced Hover Effect for the Box */
 .login-box:hover {
-    transform: scale(1.05) rotate(2deg); /* Slight rotation effect on hover */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
 }
 
 /* Inner Box Border and Frame */
@@ -74,48 +79,48 @@
     left: -10px;
     right: -10px;
     bottom: -10px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 3px solid #4caf50; /* Green border around the box */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Soft outer glow effect */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
 
 /* Title Styling */
 h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Reduced space below title */
     font-family: 'Poppins', sans-serif;
-    color: #3e8e41;
-    font-size: 30px;
-    letter-spacing: 2px;
+    color: #38813a;
+    font-size: 24px; /* Slightly smaller font */
+    letter-spacing: 1px;
     font-weight: 600;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Stronger text shadow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Input fields container */
 .input-container {
-    margin-bottom: 25px;
+    margin-bottom: 20px; /* Reduced margin */
     text-align: left;
 }
 
 label {
-    font-size: 18px;
-    color: #555454;
+    font-size: 16px; /* Reduced font size */
+    color: #474747;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced margin */
     font-weight: 500;
 }
 
 /* Input field design */
 input {
     width: 100%;
-    padding: 14px;
-    margin: 12px 0;
+    padding: 10px; /* Reduced padding */
+    margin: 10px 0; /* Reduced margin */
     border: 2px solid #ccc;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size */
     background-color: #f9f9f9;
     color: #333;
-    transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Focus and hover effects */
+    transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 /* Focus effect with smooth box-shadow */
@@ -128,28 +133,28 @@ input:focus {
 /* Button Styling */
 button {
     width: 100%;
-    padding: 16px;
+    padding: 12px; /* Reduced padding */
     background-color: #4CAF50;
     border: none;
     color: white;
-    font-size: 20px;
+    font-size: 16px; /* Reduced font size */
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Button hover effects */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover effect for the button */
 button:hover {
     background-color: #45a049;
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Button shadow */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Button active state */
 button:active {
     background-color: #388e3c;
-    transform: translateY(2px); /* Button press effect */
+    transform: translateY(2px);
 }
 
 /* Add a smooth fade-in transition */
@@ -166,19 +171,21 @@ button:active {
 /* Additional Responsive Design */
 @media (max-width: 480px) {
     .login-box {
-        width: 90%;
-        padding: 40px;
+        width: 85%; /* Adjust the width for smaller screens */
+        padding: 30px; /* Further reduce padding */
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 22px; /* Smaller font size for mobile */
     }
 
     input {
-        font-size: 14px;
+        font-size: 12px; /* Smaller font size for mobile inputs */
     }
 
     button {
-        font-size: 18px;
+        font-size: 14px; /* Smaller button font for mobile */
     }
 }
+
+
