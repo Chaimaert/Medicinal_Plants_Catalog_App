@@ -1,38 +1,44 @@
 <div class="container">
-  <!-- Right Half: Recherche avancée -->
   <div class="advanced-search">
     <div class="advanced-search-form">
-      <!-- Single search input for letters -->
       <input
         type="text"
         [(ngModel)]="searchLetter"
-        placeholder="Recherche par lettre"
+        placeholder="Recherche"
         class="search-input"
       />
       <button class="search-button" (click)="filterByLetter(searchLetter)">Rechercher</button>
-      
     </div>
   </div>
 
-  <!-- Results for Advanced Search -->
+  <!-- Plant Cards -->
   <div class="plants-container">
     <div *ngFor="let plant of getPaginatedPlants()" class="plant-card">
-      <!-- Display the plant image -->
-      <img [src]="plant.image" alt="{{ plant.name }}" />
+      <!-- Display plant image -->
+      <img [src]="plant.images[0]" alt="{{ plant.name }}" />
       <div class="plant-name">{{ plant.name }}</div>
       <button (click)="viewPlantDetails(plant.id)">Read More</button>
     </div>
   </div>
 
+  <!-- Search Result -->
   <div class="plant-result" *ngIf="plantResult">
     <h3>Search Result:</h3>
     <div class="plant-card">
-      <img [src]="plantResult.image" alt="{{ plantResult.name }}" />
+      <img [src]="plantResult.images[0]" alt="{{ plantResult.name }}" />
       <div class="plant-name">{{ plantResult.name }}</div>
-      <div class="plant-comments">
-        <h4>Comments:</h4>
+      <div class="plant-details">
+        <h4>Description:</h4>
+        <p>{{ plantResult.description }}</p>
+        <h4>Properties:</h4>
         <ul>
-          <li *ngFor="let comment of plantResult.comments">{{ comment }}</li>
+          <li *ngFor="let property of plantResult.properties">{{ property }}</li>
+        </ul>
+        <h4>Videos:</h4>
+        <ul>
+          <li *ngFor="let video of plantResult.videos">
+            <a [href]="video" target="_blank">Watch Video</a>
+          </li>
         </ul>
       </div>
     </div>

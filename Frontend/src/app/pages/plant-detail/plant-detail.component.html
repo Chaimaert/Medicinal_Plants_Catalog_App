@@ -1,63 +1,92 @@
 <div class="plant-details" *ngIf="plant">
+  <!-- Plant Name -->
   <h2><i class="fas fa-leaf"></i> {{ plant?.name }}</h2>
+
+  <!-- Plant Image -->
   <div class="image-container">
-    <img [src]="plant?.image" alt="{{ plant?.name }}" />
+    <img [src]="plant?.images?.[0]" alt="{{ plant?.name }}" />
   </div>
 
+  <!-- Details Grid -->
   <div class="details-grid">
+    <!-- Description -->
     <div class="detail-item">
       <i class="fas fa-align-left"></i>
       <span class="detail-label">Description:</span>
-      <p>{{ plant?.Description }}</p>
+      <p>{{ plant?.description || 'No description available' }}</p>
     </div>
+
+    <!-- Precautions -->
     <div class="detail-item">
       <i class="fas fa-exclamation-triangle"></i>
       <span class="detail-label">Precaution:</span>
-      <p>{{ plant?.precaution }}</p>
+      <p>{{ plant?.precautions?.join(', ') || 'No precautions available' }}</p>
     </div>
+
+    <!-- Articles -->
     <div class="detail-item">
       <i class="fas fa-book"></i>
-      <span class="detail-label">Article:</span>
-      <p><a href="{{ plant?.articles }}" target="_blank">{{ plant?.articles }}</a></p>
+      <span class="detail-label">Articles:</span>
+      <div *ngIf="plant?.articles?.length > 0; else noArticles">
+        <p *ngFor="let article of plant?.articles">
+          <a [href]="article" target="_blank">{{ article }}</a>
+        </p>
+      </div>
+      <ng-template #noArticles>
+        <p>No articles available</p>
+      </ng-template>
     </div>
+
+    <!-- Region -->
     <div class="detail-item">
       <i class="fas fa-map-marker-alt"></i>
       <span class="detail-label">Region:</span>
-      <p>{{ plant?.region }}</p>
+      <p>{{ plant?.region?.join(', ') || 'No region information available' }}</p>
     </div>
+
+    <!-- Uses -->
     <div class="detail-item">
       <i class="fas fa-hands-helping"></i>
       <span class="detail-label">Uses:</span>
-      <p>{{ plant?.uses }}</p>
+      <p>{{ plant?.uses?.join(', ') || 'No uses available' }}</p>
     </div>
+
+    <!-- Properties -->
     <div class="detail-item">
       <i class="fas fa-flask"></i>
       <span class="detail-label">Properties:</span>
-      <p>{{ plant?.properties }}</p>
+      <p>{{ plant?.properties?.join(', ') || 'No properties available' }}</p>
     </div>
 
-    <!-- Video Item -->
+    <!-- Videos -->
     <div class="detail-item video-box">
       <i class="fas fa-video"></i>
-      <span class="detail-label">Video:</span>
-      <div class="video-container">
-        <video controls>
-          <source [src]="plant?.video" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <span class="detail-label">Videos:</span>
+      <div *ngIf="plant?.videos?.length > 0; else noVideos">
+        <div *ngFor="let video of plant?.videos" class="video-container">
+          <video controls>
+            <source [src]="video" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
+      <ng-template #noVideos>
+        <p>No videos available</p>
+      </ng-template>
     </div>
   </div>
 
+  <!-- Comments Section -->
   <div class="comments-section">
     <h4><i class="fas fa-comments"></i> Comments:</h4>
     <ul>
       <li *ngFor="let comment of plant?.comments">
-        <i class="fas fa-user-circle"></i> 
+        <i class="fas fa-user-circle"></i>
         <strong>{{ comment.username }}:</strong> {{ comment.text }}
       </li>
     </ul>
 
+    <!-- Add Comment -->
     <div class="add-comment">
       <h4><i class="fas fa-pen"></i> Add a Comment</h4>
       <input
@@ -76,6 +105,7 @@
   </div>
 </div>
 
+<!-- Fallback for Missing Plant -->
 <div *ngIf="!plant">
   <p class="not-found">Plant not found.</p>
 </div>

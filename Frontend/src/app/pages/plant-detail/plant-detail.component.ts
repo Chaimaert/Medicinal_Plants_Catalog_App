@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PlantService } from '../../services/plant.service'; // import the service
+import { ActivatedRoute } from '@angular/router'; // Import for route parameters
+import { PlantService } from '../../services/plant.service'; // Import the service
 
 @Component({
   selector: 'app-plant-details',
@@ -7,45 +8,54 @@ import { PlantService } from '../../services/plant.service'; // import the servi
   styleUrls: ['./plant-detail.component.css']
 })
 export class PlantDetailsComponent implements OnInit {
-  plant: any; // To store plant data fetched from API
+  plant: any; // To store fetched plant data
   newCommentUsername: string = '';
   newCommentText: string = '';
 
-  constructor(private plantService: PlantService) {}
+  constructor(
+    private plantService: PlantService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    // Simulate fetching data from backend
-    this.getPlantDetails(); // Replace with actual API call when backend is ready
+    // Get plant ID from route and fetch details
+    const plantId = this.route.snapshot.paramMap.get('id');
+    if (plantId) {
+      this.getPlantDetails(+plantId);
+    }
   }
 
-  getPlantDetails() {
-    // Simulated static data for now
-    this.plant = {
-      name: 'Aloe Vera',
-      image: 'assets/AV.jpg',
-      Description: 'Aloe vera est une espèce en région méditerranéenne, en Afrique du Nord, aux îles Canaries et au Cap-Vert.',
-      precaution: 'Avoid excessive consumption .Conserver au réfrigérateur.  Éviter sur la peau irritée ou abîmée',
-      articles: 'https://www.dieti-natura.com/plantes-actifs/aloe-vera.html',
-      region: 'Africa, Asia',
-      uses: 'Used for skin care, burns, and more.',
-      video: 'assets/Av.mp4',
-      properties: 'Anti-inflammatory, antimicrobial.',
-      comments: [
-        { username: 'Inass', text: 'Great for skin care!' },
-        { username: 'Leila', text: 'Helps with burns.' }
-      ]
-    };
+  getPlantDetails(id: number): void {
+    console.log('Fetching details for plant ID:', id); // Debugging
+    this.plantService.getPlantById(id).subscribe(
+      (data) => {
+        console.log('Fetched Plant Details:', data); // Debugging
+        this.plant = data;
+        console.log('Images:', this.plant.images); // Debugging
+        console.log('Videos:', this.plant.videos); // Debugging
+      },
+      (error) => {
+        console.error('Error fetching plant details:', error);
+      }
+    );
   }
+
 
   addComment() {
-    // Handle adding comment logic (e.g., updating the database)
     if (this.newCommentUsername && this.newCommentText) {
-      this.plant.comments.push({
-        username: this.newCommentUsername,
-        text: this.newCommentText
-      });
-      this.newCommentUsername = '';
-      this.newCommentText = '';
+      const newComment = { username: this.newCommentUsername, text: this.newCommentText };
+
+      // Call service to save comment to backend
+      this.plantService.addComment(this.plant.id, newComment).subscribe(
+        () => {
+          this.plant.comments.push(newComment);
+          this.newCommentUsername = '';
+          this.newCommentText = '';
+        },
+        (error) => {
+          console.error('Error adding comment:', error);
+        }
+      );
     }
   }
 }
