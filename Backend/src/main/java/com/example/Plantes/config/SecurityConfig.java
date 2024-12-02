@@ -20,6 +20,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/admin/**").hasRole("ADMIN") // Protect admin endpoints
                         .requestMatchers("/plantes/**").permitAll()    // Allow public access to plant-related endpoints
+                        .requestMatchers("/admin/files/upload").hasRole("ADMIN") // Restrict POST to ADMIN
+                        .requestMatchers("/admin/files/**").permitAll() // Allow GET for everyone
                 )
                 .httpBasic(Customizer.withDefaults()) // Enable Basic Authentication
                 .logout(logout -> logout
