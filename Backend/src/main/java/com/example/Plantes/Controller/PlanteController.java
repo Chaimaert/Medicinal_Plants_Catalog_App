@@ -43,7 +43,11 @@ public class PlanteController {
                     plante.getUses(),
                     plante.getPrecautions(),
                     plante.getInteractions(),
-                    commentairesDTO
+                    commentairesDTO,
+                    plante.getImages(),
+                    plante.getVideos(),
+                    plante.getArticles(),
+                    plante.getRegion()
             );
             return ResponseEntity.ok(planteDTO);
         } else {
