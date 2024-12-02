@@ -62,17 +62,39 @@ public class PlanteService {
 
     public Plante updatePlante(Long id, Plante planteDetails) {
         Plante existingPlante = planteRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Plant not found with ID: " + id));
+                .orElseThrow(() -> new RuntimeException("Plante non trouvée avec ID : " + id));
 
-        existingPlante.setName(planteDetails.getName());
-        existingPlante.setDescription(planteDetails.getDescription());
-        existingPlante.setProperties(planteDetails.getProperties());
-        existingPlante.setUses(planteDetails.getUses());
-        existingPlante.setRegion(planteDetails.getRegion());
-        existingPlante.setImages(planteDetails.getImages());
-        existingPlante.setVideos(planteDetails.getVideos());
-        existingPlante.setPrecautions(planteDetails.getPrecautions());
-        existingPlante.setInteractions(planteDetails.getInteractions());
+
+        if (planteDetails.getName() != null) {
+            existingPlante.setName(planteDetails.getName());
+        }
+        if (planteDetails.getDescription() != null) {
+            existingPlante.setDescription(planteDetails.getDescription());
+        }
+        if (planteDetails.getProperties() != null) {
+            existingPlante.setProperties(planteDetails.getProperties());
+        }
+        if (planteDetails.getUses() != null) {
+            existingPlante.setUses(planteDetails.getUses());
+        }
+        if (planteDetails.getRegion() != null) {
+            existingPlante.setRegion(planteDetails.getRegion());
+        }
+        if (planteDetails.getImages() != null) {
+            existingPlante.setImages(planteDetails.getImages());
+        }
+        if (planteDetails.getVideos() != null) {
+            existingPlante.setVideos(planteDetails.getVideos());
+        }
+        if (planteDetails.getPrecautions() != null) {
+            existingPlante.setPrecautions(planteDetails.getPrecautions());
+        }
+        if (planteDetails.getInteractions() != null) {
+            existingPlante.setInteractions(planteDetails.getInteractions());
+        }
+        if (planteDetails.getArticles() != null) {
+            existingPlante.setArticles(planteDetails.getArticles());
+        }
 
         return planteRepository.save(existingPlante);
     }
