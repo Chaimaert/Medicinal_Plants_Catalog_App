@@ -11,7 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { PlantDetailsComponent } from './pages/plant-detail/plant-detail.component';
 import { RecommendationComponent } from './pages/recommendations/recommendations.component';
-import { RecommendationService } from './pages/recommendations/recommendations.service';
+import { RecommendationService } from './services/recommendations.service';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
 import { AddPlantComponent } from './pages/add-plant/add-plant.component';
 import { EditPlantComponent } from './pages/edit-plant/edit-plant.component';
@@ -49,10 +49,10 @@ const routes: Routes = [
     PlantDetailsComponent,
     RecommendationComponent,
     AdminLoginComponent,
-    AddPlantComponent, 
+    AddPlantComponent,
     AdminDashboardComponent,// <-- Make sure AddPlantComponent is listed here
     EditPlantComponent  // <-- Also ensure EditPlantComponent is declared
-    
+
   ],
   imports: [
     BrowserModule,
