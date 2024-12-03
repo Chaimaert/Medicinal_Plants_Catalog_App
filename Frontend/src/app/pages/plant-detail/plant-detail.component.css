@@ -97,13 +97,18 @@
 }
 
 .detail-item a {
-  word-wrap: break-word; 
+  word-wrap: break-word;
   color: #1abc9c;
   text-decoration: none;
 }
 
 .detail-item a:hover {
   text-decoration: underline;
+}
+
+.detail-label {
+  font-weight: 700;
+  color: #185e16;
 }
 
 /* Video Section */

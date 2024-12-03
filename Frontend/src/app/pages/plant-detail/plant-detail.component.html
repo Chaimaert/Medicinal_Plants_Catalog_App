@@ -61,7 +61,7 @@
     <!-- Videos -->
     <div class="detail-item video-box">
       <i class="fas fa-video"></i>
-      <span class="detail-label">Videos:</span>
+      <!-- <span class="detail-label">Video</span> -->
       <div *ngIf="plant?.videos?.length > 0; else noVideos">
         <div *ngFor="let video of plant?.videos" class="video-container">
           <video controls>
@@ -80,9 +80,9 @@
   <div class="comments-section">
     <h4><i class="fas fa-comments"></i> Comments:</h4>
     <ul>
-      <li *ngFor="let comment of plant?.comments">
+      <li *ngFor="let comment of comments">
         <i class="fas fa-user-circle"></i>
-        <strong>{{ comment.username }}:</strong> {{ comment.text }}
+        <strong>{{ comment.nom || comment.email }}:</strong> {{ comment.contenu }}
       </li>
     </ul>
 
@@ -91,12 +91,12 @@
       <h4><i class="fas fa-pen"></i> Add a Comment</h4>
       <input
         type="text"
-        [(ngModel)]="newCommentUsername"
-        placeholder="Enter your name"
+        [(ngModel)]="newComment.nom"
+        placeholder="Enter your name or email"
         class="comment-input"
       />
       <textarea
-        [(ngModel)]="newCommentText"
+        [(ngModel)]="newComment.contenu"
         placeholder="Write your comment..."
         class="comment-textarea"
       ></textarea>
