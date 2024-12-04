@@ -1,52 +1,33 @@
 <div class="container">
+  <!-- Search Section -->
   <div class="advanced-search">
     <div class="advanced-search-form">
       <input
         type="text"
-        [(ngModel)]="searchLetter"
-        placeholder="Recherche"
+        placeholder="Search plant"
         class="search-input"
       />
-      <button class="search-button" (click)="filterByLetter(searchLetter)">Rechercher</button>
+      <button class="search-button" (click)="searchPlants()">Search</button>
     </div>
   </div>
 
   <!-- Plant Cards -->
   <div class="plants-container">
     <div *ngFor="let plant of getPaginatedPlants()" class="plant-card">
-      <!-- Display plant image -->
       <img [src]="plant.images[0]" alt="{{ plant.name }}" />
       <div class="plant-name">{{ plant.name }}</div>
       <button (click)="viewPlantDetails(plant.id)">Read More</button>
     </div>
   </div>
 
-  <!-- Search Result -->
-  <div class="plant-result" *ngIf="plantResult">
-    <h3>Search Result:</h3>
-    <div class="plant-card">
-      <img [src]="plantResult.images[0]" alt="{{ plantResult.name }}" />
-      <div class="plant-name">{{ plantResult.name }}</div>
-      <div class="plant-details">
-        <h4>Description:</h4>
-        <p>{{ plantResult.description }}</p>
-        <h4>Properties:</h4>
-        <ul>
-          <li *ngFor="let property of plantResult.properties">{{ property }}</li>
-        </ul>
-        <h4>Videos:</h4>
-        <ul>
-          <li *ngFor="let video of plantResult.videos">
-            <a [href]="video" target="_blank">Watch Video</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Pagination Buttons -->
+  <!-- Pagination -->
   <div class="pagination">
     <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
-    <button (click)="nextPage()" [disabled]="currentPage * itemsPerPage >= filteredPlants.length">Next</button>
+    <button
+      (click)="nextPage()"
+      [disabled]="currentPage * itemsPerPage >= filteredPlants.length"
+    >
+      Next
+    </button>
   </div>
 </div>

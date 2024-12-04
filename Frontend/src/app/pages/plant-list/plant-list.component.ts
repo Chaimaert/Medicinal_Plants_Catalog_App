@@ -11,10 +11,9 @@ import { Plant } from '../../models/plant.model';
 export class PlantListComponent implements OnInit {
   plants: Plant[] = [];
   filteredPlants: Plant[] = [];
-  searchLetter: string = '';
+  searchLetter: string = ''; // For search input
   currentPage: number = 1;
   itemsPerPage: number = 8;
-  plantResult: Plant | null = null;
 
   constructor(private router: Router, private plantService: PlantService) {}
 
@@ -29,21 +28,22 @@ export class PlantListComponent implements OnInit {
     });
   }
 
-  filterByLetter(letter: string): void {
-    if (!letter) {
-      this.filteredPlants = [...this.plants];
-    } else {
-      this.filteredPlants = this.plants.filter((plant) =>
-        plant.name.toLowerCase().startsWith(letter.toLowerCase())
-      );
-    }
-    this.currentPage = 1;
+  searchPlants(): void {
+    const searchParams = { nom: this.searchLetter }; // Assuming `nom` is the backend query param
+    this.plantService.searchPlants(searchParams).subscribe(
+      (data: Plant[]) => {
+        this.filteredPlants = data;
+        this.currentPage = 1;
+      },
+      (error) => {
+        console.error('Error searching plants:', error);
+      }
+    );
   }
 
   viewPlantDetails(plantId: number): void {
-    this.router.navigate(['/plant-details', plantId]); // Navigates to a dynamic plant details route
+    this.router.navigate(['/plant-details', plantId]); // Navigate to plant details page
   }
-
 
   getPaginatedPlants(): Plant[] {
     const startIndex = (this.currentPage - 1) * this.itemsPerPage;
@@ -63,4 +63,3 @@ export class PlantListComponent implements OnInit {
     }
   }
 }
-
