@@ -15,7 +15,8 @@ export class AdminLoginComponent {
   onSubmit() {
     if (this.username === 'admin' && this.password === 'admin123') {
       alert('Login successful!');
-      this.router.navigate(['/admin']);  // Navigate to the admin dashboard after successful login
+      localStorage.setItem('isAdmin', 'true'); // Store admin status
+      this.router.navigate(['/admin']); // Navigate to Admin Dashboard
     } else {
       alert('Invalid credentials!');
     }
