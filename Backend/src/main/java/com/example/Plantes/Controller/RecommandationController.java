@@ -1,7 +1,7 @@
 package com.example.Plantes.Controller;
 
 import com.example.Plantes.Entities.Plante;
-import com.example.Plantes.dto.UserRequest; // Importer la classe UserRequest
+import com.example.Plantes.dto.UserRequest;
 import com.example.Plantes.Service.RecommandationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
