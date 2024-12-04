@@ -40,7 +40,7 @@ public class SecurityConfig {
     public InMemoryUserDetailsManager userDetailsManager(PasswordEncoder encoder) {
         return new InMemoryUserDetailsManager(
                 User.withUsername("admin")
-                        .password(encoder.encode("admin123")) // Admin username/password
+                        .password(encoder.encode("admin123"))
                         .roles("ADMIN") // Assign ADMIN role
                         .build()
         );

@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5d2583-28b0-460b-b24d-789bbe61b791" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/RecommandationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/RecommandationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/add-plant/add-plant.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/add-plant/add-plant.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/edit-plant/edit-plant.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/edit-plant/edit-plant.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/plant-list/plant-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/plant-list/plant-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/plant-list/plant-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/plant-list/plant-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/recommendations/recommendations.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/recommendations/recommendations.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/recommendations/recommendations.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/recommendations/recommendations.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/services/plant.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/services/plant.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/PlanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/PlanteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/SecurityConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

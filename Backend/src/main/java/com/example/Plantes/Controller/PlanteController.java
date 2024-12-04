@@ -55,7 +55,7 @@ public class PlanteController {
         }
     }
 
-    // Recherche avancée de plantes
+    // Recherche plantes
     @GetMapping("/recherche-avancee")
     public List<Plante> rechercheAvancee(
             @RequestParam(required = false) String nom,
