@@ -24,8 +24,8 @@ export class PlantService {
   // search plants
   searchPlants(searchParams: any): Observable<Plant[]> {
     return this.http.get<Plant[]>(`${this.apiUrl}/plantes/recherche-avancee`, { params: searchParams });
-  }
 
+  }
 
   // Add a new comment
   addComment(

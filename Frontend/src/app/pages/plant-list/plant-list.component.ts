@@ -11,7 +11,7 @@ import { Plant } from '../../models/plant.model';
 export class PlantListComponent implements OnInit {
   plants: Plant[] = [];
   filteredPlants: Plant[] = [];
-  searchLetter: string = ''; // For search input
+  searchInput: string = ''; // For the single search input
   currentPage: number = 1;
   itemsPerPage: number = 8;
 
@@ -29,9 +29,22 @@ export class PlantListComponent implements OnInit {
   }
 
   searchPlants(): void {
-    const searchParams = { nom: this.searchLetter }; // Assuming `nom` is the backend query param
-    this.plantService.searchPlants(searchParams).subscribe(
+    const params: { [key: string]: string } = {};
+
+    if (this.searchInput.toLowerCase().startsWith('region:')) {
+      params['region'] = this.searchInput.replace('region:', '').trim();
+    } else if (this.searchInput.toLowerCase().startsWith('property:')) {
+      params['proprietes'] = this.searchInput.replace('property:', '').trim();
+    } else if (this.searchInput.toLowerCase().startsWith('use:')) {
+      params['utilisations'] = this.searchInput.replace('use:', '').trim();
+    } else {
+      params['nom'] = this.searchInput.trim();
+    }
+
+    console.log('Search Params:', params); // Debug here
+    this.plantService.searchPlants(params).subscribe(
       (data: Plant[]) => {
+        console.log('Filtered Plants:', data); // Debug here
         this.filteredPlants = data;
         this.currentPage = 1;
       },
@@ -42,7 +55,7 @@ export class PlantListComponent implements OnInit {
   }
 
   viewPlantDetails(plantId: number): void {
-    this.router.navigate(['/plant-details', plantId]); // Navigate to plant details page
+    this.router.navigate(['/plant-details', plantId]); // Navigate to the plant details page
   }
 
   getPaginatedPlants(): Plant[] {

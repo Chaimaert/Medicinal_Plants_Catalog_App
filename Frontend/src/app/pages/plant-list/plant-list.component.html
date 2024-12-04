@@ -3,10 +3,12 @@
   <div class="advanced-search">
     <div class="advanced-search-form">
       <input
-        type="text"
-        placeholder="Search plant"
-        class="search-input"
-      />
+      type="text"
+      [(ngModel)]="searchInput"
+      placeholder="Search "
+      class="search-input"
+    />
+
       <button class="search-button" (click)="searchPlants()">Search</button>
     </div>
   </div>
