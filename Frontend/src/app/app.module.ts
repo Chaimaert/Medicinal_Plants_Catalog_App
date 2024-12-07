@@ -10,7 +10,7 @@ import { PlantListComponent } from './pages/plant-list/plant-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { PlantDetailsComponent } from './pages/plant-detail/plant-detail.component';
-import { RecommendationComponent } from './pages/recommendations/recommendations.component';
+import { RecommendationsComponent } from './pages/recommendations/recommendations.component';
 import { RecommendationService } from './services/recommendations.service';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
 import { AddPlantComponent } from './pages/add-plant/add-plant.component';
@@ -47,12 +47,11 @@ const routes: Routes = [
     HomeComponent,
     PlantListComponent,
     PlantDetailsComponent,
-    RecommendationComponent,
+    RecommendationsComponent,
     AdminLoginComponent,
     AddPlantComponent,
     AdminDashboardComponent,// <-- Make sure AddPlantComponent is listed here
     EditPlantComponent  // <-- Also ensure EditPlantComponent is declared
-
   ],
   imports: [
     BrowserModule,

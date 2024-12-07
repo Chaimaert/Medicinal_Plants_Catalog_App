@@ -7,12 +7,12 @@
     <!-- Form -->
     <form (ngSubmit)="submitForm()">
       <div class="form-group">
-        <label for="besoins-de-sante">Health Needs:</label>
+        <label for="besoin-de-sante">Health Needs:</label>
         <input
           type="text"
-          id="besoins-de-sante"
-          [(ngModel)]="formData.besoinsDeSante"
-          name="besoinsDeSante"
+          id="besoin-de-sante"
+          [(ngModel)]="formData.besoinDeSante"
+          name="besoinDeSante"
           placeholder="E.g., Stress, Digestion"
           required
         />
@@ -42,14 +42,16 @@
   </div>
 
   <!-- Result Section -->
-  <div *ngIf="plantResult" class="result-container">
-    <h3 class="plant-title">Recommended Plant: {{ plantResult.name }}</h3>
-    <div class="plant-details">
-      <img [src]="plantResult.image" alt="{{ plantResult.name }}" class="plant-image" />
+<!-- Result Section -->
+<div *ngIf="plantResult && plantResult.length > 0" class="result-container">
+  <div *ngFor="let plant of plantResult">
+    <h3 class="plant-title">{{ plant.name }}</h3>
+    <div class="plant-detail">
+      <img [src]="plant.image" alt="{{ plant.name }}" class="plant-image" />
       <div class="plant-info">
-        <p><strong>Properties:</strong> {{ plantResult.properties }}</p>
-        <p><strong>Uses:</strong> {{ plantResult.uses }}</p>
-        <p><strong>Region:</strong> {{ plantResult.region }}</p>
+        <p><strong>Properties:</strong> {{ plant.properties.join(', ') }}</p>
+        <p><strong>Uses:</strong> {{ plant.uses.join(', ') }}</p>
+        <p><strong>Precautions:</strong> {{ plant.precautions }}</p>
       </div>
     </div>
   </div>

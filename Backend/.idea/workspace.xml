@@ -6,9 +6,77 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5d2583-28b0-460b-b24d-789bbe61b791" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/PlanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/PlanteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Entities/Plante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Entities/Plante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/CataloguePlantesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/CataloguePlantesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminPlanteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminPlanteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/CommentaireController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/CommentaireController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/FileUploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/RecommandationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/RecommandationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Commentaire$CommentaireBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Commentaire$CommentaireBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Commentaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Commentaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Plante$PlanteBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Plante$PlanteBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Plante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Entities/Plante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Repository/CommentaireRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Repository/CommentaireRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Repository/PlantRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Repository/PlantRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/CommentaireService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/CommentaireService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/PlanteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/PlanteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/RecommandationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/RecommandationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/CorsConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/CorsConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/CorsConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/dto/CommentaireDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/dto/CommentaireDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/dto/PlanteDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/dto/PlanteDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/dto/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/dto/UserRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/Plantes/CataloguePlantesApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/Plantes/CataloguePlantesApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_common.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_common.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_common_http.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_common_http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_common_http.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_common_http.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_core.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_forms.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_forms.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_button.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_button.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_button.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_card.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_card.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_icon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_icon.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_icon.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_table.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_material_table.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser_animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser_animations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser_animations.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser_animations.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser_animations_async.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser_animations_async.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser_animations_async.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_platform-browser_animations_async.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/@angular_router.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/browser-5PAOK5CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/browser-5PAOK5CN.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-3CLGLSPO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-3CLGLSPO.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-42X6WMC4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-42X6WMC4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-5D6ECRDO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-5D6ECRDO.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-AYP5VMBL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-AYP5VMBL.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-G25BA4SJ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-G25BA4SJ.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-LVGXKZF2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/chunk-LVGXKZF2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/vite/deps/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/@angular/build/src/tools/angular/compilation/parallel-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/@angular/build/src/tools/angular/compilation/parallel-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/@angular/build/src/tools/esbuild/javascript-transformer-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/@angular/build/src/tools/esbuild/javascript-transformer-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/@angular/cli/bin/ng.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/@angular/cli/bin/ng.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/vite/bin/vite.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/vite/bin/vite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/WebpackOptionsApply.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/WebpackOptionsApply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/webpack.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +105,12 @@
     &quot;assignee&quot;: &quot;Chaimaert&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Chaimaert/Medicinal_Plants_Catalog_App.git&quot;,
-    &quot;accountId&quot;: &quot;924903b7-92f1-4c9b-8208-c3abad6edaf6&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Chaimaert/Medicinal_Plants_Catalog_App.git",
+    "accountId": "0b0b737d-a877-48ad-8204-cd797160b127"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -61,31 +129,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CataloguePlantesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CommentaireControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CommentaireControllerTest.testGetCommentaires_Empty.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.example.Plantes.dto in CataloguePlantes.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CataloguePlantesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/Medicinal_Plants_Catalog_App/Backend/uploads&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;two.files.diff.last.used.folder&quot;: &quot;D:/intellijworkspace/CataloguePlantes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CataloguePlantesApplication.executor": "Run",
+    "JUnit.CommentaireControllerTest.executor": "Run",
+    "JUnit.CommentaireControllerTest.testGetCommentaires_Empty.executor": "Run",
+    "JUnit.com.example.Plantes.dto in CataloguePlantes.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CataloguePlantesApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/projects/Medicinal_Plants_Catalog_App/Backend/uploads",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "two.files.diff.last.used.folder": "D:/intellijworkspace/CataloguePlantes",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\Medicinal_Plants_Catalog_App\Backend\uploads" />

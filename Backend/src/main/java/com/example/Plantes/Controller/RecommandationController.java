@@ -17,6 +17,9 @@ public class RecommandationController {
 
     @PostMapping
     public List<Plante> obtenirRecommandations(@RequestBody UserRequest request) {
-        return recommandationService.genererRecommandations(request);
+        System.out.println("Received request: " + request);
+        List<Plante> recommandations = recommandationService.genererRecommandations(request);
+        System.out.println("Recommandations generated: " + recommandations);  // Log recommendations
+        return recommandations;
     }
 }

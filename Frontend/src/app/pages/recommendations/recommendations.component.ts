@@ -4,34 +4,53 @@ import { RecommendationService } from '../../services/recommendations.service';
 @Component({
   selector: 'app-recommendations',
   templateUrl: './recommendations.component.html',
-  styleUrls: ['./recommendations.component.css']
+  styleUrls: ['./recommendations.component.css'],
 })
-export class RecommendationComponent {
-  // Model for form data
+export class RecommendationsComponent {
   formData = {
-    besoinsDeSante: '',  // Required field
-    preferences: '',     // Optional
-    antecedentsMedicaux: '' // Optional
+    besoinDeSante: '',
+    preferences: '',
+    antecedentsMedicaux: '',
   };
 
-  plantResult: any = null; 
+  plantResult: any = null;
+  errorMessage: string = '';
 
   constructor(private recommendationService: RecommendationService) {}
 
-  // Handle form submission
   submitForm() {
-    if (!this.formData.besoinsDeSante.trim()) {
-      alert('Besoins de Santé is a required field.');
+    // Validation des champs obligatoires
+    if (!this.formData.besoinDeSante.trim()) {
+      this.errorMessage = 'Le champ "Besoins de Santé" est obligatoire.';
       return;
     }
 
-    // Call the backend API to fetch recommendations
-    this.recommendationService.getRecommendations(this.formData).subscribe(
+    // Préparer les données pour la requête
+    const requestData = {
+      besoinDeSante: this.formData.besoinDeSante.trim(),
+      preferences: this.formData.preferences
+        ? this.formData.preferences.split(',')
+        : [],
+      antecedentsMedicaux: this.formData.antecedentsMedicaux
+        ? this.formData.antecedentsMedicaux.split(',')
+        : [],
+    };
+
+    // Appeler le service pour obtenir les recommandations
+    this.recommendationService.getRecommendations(requestData).subscribe(
       (response) => {
-        this.plantResult = response;
+        if (response && response.length > 0) {
+          this.plantResult = response;
+          this.errorMessage = '';
+        } else {
+          this.errorMessage =
+            'Aucune recommandation trouvée pour les besoins de santé spécifiés.';
+        }
       },
       (error) => {
-        console.error('Error fetching recommendations:', error);
+        console.error('Erreur lors de la récupération des recommandations:', error);
+        this.errorMessage =
+          'Une erreur est survenue lors de la récupération des recommandations.';
       }
     );
   }

@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/admin/plantes")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AdminPlanteController {
 
     private final PlanteService planteService;
@@ -28,6 +29,8 @@ public class AdminPlanteController {
     public ResponseEntity<Plante> addPlante(@RequestBody Plante plante) {
         return ResponseEntity.ok(planteService.addPlante(plante));
     }
+
+
 
     @PutMapping("/{id}")
     public ResponseEntity<Plante> updatePlante(@PathVariable Long id, @RequestBody Plante plante) {

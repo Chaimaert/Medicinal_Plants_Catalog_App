@@ -22,6 +22,7 @@ public class SecurityConfig {
                         .requestMatchers("/admin/files/**").permitAll()
                         // Allow public access to plant endpoints
                         .requestMatchers("/plantes/**").permitAll()
+                        .requestMatchers("/plantes/recommandations").permitAll()
                         // Restrict upload functionality to ADMIN role
                         .requestMatchers("/admin/files/upload").hasRole("ADMIN")
                         // Restrict all other admin endpoints to ADMIN role

@@ -33,12 +33,12 @@ public class Plante {
     private List<String> uses;
 
     @ElementCollection
-    private List<String> precautions; // Précautions
+    private List<String> precautions;
 
     @ElementCollection
-    private List<String> interactions; // Interactions
+    private List<String> interactions;
 
-    @OneToMany(mappedBy = "plante") // Relation One-to-Many avec Commentaire
+    @OneToMany(mappedBy = "plante")
     @JsonManagedReference
     private List<Commentaire> comments;
 

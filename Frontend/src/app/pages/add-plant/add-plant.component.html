@@ -61,6 +61,11 @@
       <button type="submit">Save</button>
     </div>
   </form>
+  
+    <!-- Message d'erreur -->
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
 
   <!-- Success Message -->
   <div *ngIf="successMessage" class="success-message">
