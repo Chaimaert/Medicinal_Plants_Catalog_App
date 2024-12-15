@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { PlantManagementService } from '../../services/plant-management.service';
 import { Router } from '@angular/router';
 
-import { AdminService } from '../../services/admin.service';
-
 @Component({
   selector: 'app-add-plant',
   templateUrl: './add-plant.component.html',
@@ -24,51 +22,17 @@ export class AddPlantComponent {
   };
 
   successMessage: string = '';
-  errorMessage: string = ''; // Pour gérer les erreurs
+  errorMessage: string = '';
 
-  constructor(private adminService: AdminService) {}
-
-  // Méthode pour gérer la sélection des fichiers
-  onFileSelected(event: Event, type: 'images' | 'video') {
-    const input = event.target as HTMLInputElement;
-    const file = input.files ? input.files[0] : null;
-
-    if (file) {
-      if (type === 'images') {
-        this.plantData.image = file;
-      } else if (type === 'video') {
-        this.plantData.video = file;
-      }
-    }
-  }
+  constructor(private plantManagementService: PlantManagementService, private router: Router) {}
 
   // Méthode pour soumettre le formulaire
   addPlant() {
-    const formData = new FormData();
-
-    // Ajouter les champs au FormData
-    formData.append('name', this.plantData.name);
-    formData.append('description', this.plantData.description);
-    formData.append('articles', this.plantData.articles);
-    formData.append('comments', this.plantData.comments);
-    formData.append('precautions', this.plantData.precautions);
-    formData.append('properties', this.plantData.properties);
-    formData.append('region', this.plantData.region);
-    formData.append('uses', this.plantData.uses);
-
-    if (this.plantData.image) {
-      formData.append('image', this.plantData.image);
-    }
-
-    if (this.plantData.video) {
-      formData.append('video', this.plantData.video);
-    }
-
     // Appeler le service pour envoyer les données
-    this.adminService.addPlant(formData).subscribe({
-      next: () => {
+    this.plantManagementService.addPlant(this.plantData).subscribe({
+      next: (response) => {
         this.successMessage = 'Plant added successfully!';
-        this.errorMessage = ''; // Réinitialiser les erreurs
+        this.errorMessage = '';
         // Réinitialiser les données du formulaire
         this.plantData = {
           name: '',
@@ -79,9 +43,11 @@ export class AddPlantComponent {
           properties: '',
           region: '',
           uses: '',
-          image: null,
-          video: null
+          image: null as File | null,
+          video: null as File | null
         };
+        // Redirection si nécessaire
+        this.router.navigate(['/admin']); 
       },
       error: (err) => {
         console.error('Error adding plant:', err);

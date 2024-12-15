@@ -9,39 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./admin-dashboard.component.css']
 })
 export class AdminDashboardComponent implements OnInit {
-  plants: any[] = [
-    {
-      id: 1,
-      image: 'assets/AV.jpg',
-      name: 'Aloe Vera', 
-    },
-    {
-      id: 2,
-      image: 'assets/plant4.jpg',
-      name: 'Mint',
-    },
-    {
-      id: 3,
-      image: 'assets/lavendar.jpg',
-      name: 'Lavendar', 
-    },
-    {
-      image: 'assets/calendula.jpg',
-      name: 'Calendula', 
-    },
-    {
-      image: 'assets/chamomile.jpg',
-      name: 'Chamomile', 
-    },
-    {
-      image: 'assets/tumeric.jpg',
-      name: 'Tumeric', 
-    },
-    {
-      image: 'assets/roseamry.jpg',
-      name: 'Rosemary', 
-    },
-  ];
+  plants: any[] = []; // Initialisez comme un tableau vide
 
   constructor(
     private plantService: PlantManagementService,
@@ -49,36 +17,42 @@ export class AdminDashboardComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.loadPlants();
+    this.loadPlants(); // Charge les plantes lors de l'initialisation
   }
 
   loadPlants() {
     this.plantService.getPlants().subscribe(data => {
-      this.plants = data;
+      this.plants = data; // Affecte les données récupérées à la variable `plants`
+    }, error => {
+      console.error('Erreur lors de la récupération des plantes', error);
+      // Vous pouvez afficher un message d'erreur à l'utilisateur ici
     });
   }
 
   // Navigate to add plant form
   addPlant() {
-    this.router.navigate(['/admin/add-plant']);
+    this.router.navigate(['/admin/add-plant']); // Navigue vers la page d'ajout de plante
   }
 
   // Navigate to edit plant form (convert id to string)
   editPlant(id: number) {
-    console.log('Edit button clicked, navigating to edit page with ID:', id); // Debug log
-    this.router.navigate([`/admin/edit-plant/${id.toString()}`]);
+    console.log('Edit button clicked, navigating to edit page with ID:', id); // Log pour le débogage
+    this.router.navigate([`/admin/edit-plant/${id.toString()}`]); // Navigue vers la page d'édition de la plante
   }
-  
-  
 
-   // Delete plant
-   deletePlant(id: number) {
-    this.plants = this.plants.filter(plant => plant.id !== id);
+  // Delete plant
+  deletePlant(id: number) {
+    this.plantService.deletePlant(id.toString()).subscribe(() => {
+      this.plants = this.plants.filter(plant => plant.id !== id); // Met à jour la liste après suppression
+    }, error => {
+      console.error('Erreur lors de la suppression de la plante', error);
+      // Gérer l'erreur ici si nécessaire
+    });
   }
 
   // Logout
   logout() {
-    // Call your backend logout method if needed
-    this.router.navigate(['/login']);
+    // Ici vous pouvez appeler la méthode de déconnexion de votre backend si nécessaire
+    this.router.navigate(['/login']); // Navigue vers la page de connexion
   }
 }

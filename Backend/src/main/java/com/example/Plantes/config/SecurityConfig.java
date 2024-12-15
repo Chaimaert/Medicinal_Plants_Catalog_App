@@ -24,9 +24,9 @@ public class SecurityConfig {
                         .requestMatchers("/plantes/**").permitAll()
                         .requestMatchers("/plantes/recommandations").permitAll()
                         // Restrict upload functionality to ADMIN role
-                        .requestMatchers("/admin/files/upload").hasRole("ADMIN")
+                        .requestMatchers("/admin/files/upload").permitAll()
                         // Restrict all other admin endpoints to ADMIN role
-                        .requestMatchers("/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/admin/**").permitAll()
                 )
                 .httpBasic(Customizer.withDefaults()) // Use basic authentication
                 .logout(logout -> logout

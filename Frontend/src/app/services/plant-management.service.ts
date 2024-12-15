@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PlantManagementService {
-  private apiUrl = 'http://localhost:8084/api/plants'; // Replace with your actual backend URL
+  private apiUrl = 'http://localhost:8080/admin/plantes'; 
 
   constructor(private http: HttpClient) {}
 
@@ -20,6 +20,7 @@ export class PlantManagementService {
   getPlantById(plantId: string): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/${plantId}`);
   }
+
 
   // Method to add a new plant
   addPlant(plantData: any): Observable<any> {

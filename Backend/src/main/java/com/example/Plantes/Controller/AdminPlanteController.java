@@ -42,5 +42,11 @@ public class AdminPlanteController {
         planteService.deletePlante(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Plante> getPlantById(@PathVariable Long id) {
+        Plante plante = planteService.getPlantById(id);
+        return ResponseEntity.ok(plante);
+    }
 }
 

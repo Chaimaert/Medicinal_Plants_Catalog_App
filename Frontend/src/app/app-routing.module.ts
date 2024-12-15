@@ -10,22 +10,18 @@ import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard
 import { EditPlantComponent } from './pages/edit-plant/edit-plant.component';
 import { AddPlantComponent } from './pages/add-plant/add-plant.component';
 
-
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },  // Redirection vers la page d'accueil
   { path: 'home', component: HomeComponent },
   { path: 'search', component: SearchPlantsComponent },
-  { path: 'admin-login', component: AdminLoginComponent },
   { path: 'recommendations', component: RecommendationsComponent },
   { path: 'plants', component: PlantListComponent },
   { path: 'plant-details/:id', component: PlantDetailsComponent },
-  { path: 'login', component: AdminLoginComponent },  // Ensure the login route is defined
-  { path: 'admin', component: AdminDashboardComponent },  // Admin dashboard route
-  { path: '', redirectTo: '/login', pathMatch: 'full' },  // Default route is login
-  { path: 'admin/edit-plant/:id', component: EditPlantComponent },
-  
-
-  
+  { path: 'admin-login', component: AdminLoginComponent }, // Route pour la connexion admin
+  { path: 'admin', component: AdminDashboardComponent }, // Dashboard admin
+  { path: 'admin/edit-plant/:id', component: EditPlantComponent }, // Édition de plante
+  { path: 'admin/add-plant', component: AddPlantComponent }, // Ajout de plante
+  { path: 'login', component: AdminLoginComponent }, // Route de connexion (peut être supprimée si redondante)
 ];
 
 @NgModule({

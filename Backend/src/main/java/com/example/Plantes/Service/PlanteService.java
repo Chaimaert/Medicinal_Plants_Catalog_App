@@ -109,5 +109,9 @@ public class PlanteService {
     public Optional<Plante> findById(Long id) {
         return planteRepository.findById(id);
     }
+
+    public Plante getPlantById(Long id) {
+        return getDetails(id);
+    }
 }
 
