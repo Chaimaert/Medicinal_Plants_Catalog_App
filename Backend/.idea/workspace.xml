@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5d2583-28b0-460b-b24d-789bbe61b791" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/AdminPlanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Controller/AdminPlanteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Service/PlanteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/Service/PlanteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Plantes/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminPlanteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Controller/AdminPlanteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/PlanteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/Service/PlanteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Plantes/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.angular/cache/18.2.12/Frontend/.tsbuildinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/@angular/build/src/tools/angular/compilation/parallel-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/@angular/build/src/tools/angular/compilation/parallel-worker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/@angular/build/src/tools/esbuild/javascript-transformer-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/@angular/build/src/tools/esbuild/javascript-transformer-worker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/@angular/cli/bin/ng.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/@angular/cli/bin/ng.js" afterDir="false" />
@@ -20,11 +13,7 @@
       <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/WebpackOptionsApply.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/WebpackOptionsApply.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/node_modules/webpack/lib/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/add-plant/add-plant.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/add-plant/add-plant.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/admin-dashboard/admin-dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/admin-dashboard/admin-dashboard.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/pages/edit-plant/edit-plant.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/pages/edit-plant/edit-plant.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/services/plant-management.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/services/plant-management.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

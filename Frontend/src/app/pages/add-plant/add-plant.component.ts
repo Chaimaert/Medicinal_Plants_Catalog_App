@@ -26,14 +26,26 @@ export class AddPlantComponent {
 
   constructor(private plantManagementService: PlantManagementService, private router: Router) {}
 
-  // Méthode pour soumettre le formulaire
+  // Method to handle file selection
+  onFileSelected(event: Event, type: string): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      const file = input.files[0];
+      if (type === 'image') {
+        this.plantData.image = file; // Store the selected image
+      } else if (type === 'video') {
+        this.plantData.video = file; // Store the selected video
+      }
+      console.log(`Selected ${type} file:`, file);
+    }
+  }
+
+  // Method to submit the form
   addPlant() {
-    // Appeler le service pour envoyer les données
     this.plantManagementService.addPlant(this.plantData).subscribe({
       next: (response) => {
         this.successMessage = 'Plant added successfully!';
         this.errorMessage = '';
-        // Réinitialiser les données du formulaire
         this.plantData = {
           name: '',
           description: '',
@@ -46,8 +58,7 @@ export class AddPlantComponent {
           image: null as File | null,
           video: null as File | null
         };
-        // Redirection si nécessaire
-        this.router.navigate(['/admin']); 
+        this.router.navigate(['/admin']);
       },
       error: (err) => {
         console.error('Error adding plant:', err);
