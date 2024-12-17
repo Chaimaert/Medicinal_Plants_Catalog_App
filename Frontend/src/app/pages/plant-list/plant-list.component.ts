@@ -28,30 +28,28 @@ export class PlantListComponent implements OnInit {
     });
   }
 
+  
   searchPlants(): void {
-    const params: { [key: string]: string } = {};
-
-    if (this.searchInput.toLowerCase().startsWith('region:')) {
-      params['region'] = this.searchInput.replace('region:', '').trim();
-    } else if (this.searchInput.toLowerCase().startsWith('property:')) {
-      params['proprietes'] = this.searchInput.replace('property:', '').trim();
-    } else if (this.searchInput.toLowerCase().startsWith('use:')) {
-      params['utilisations'] = this.searchInput.replace('use:', '').trim();
-    } else {
-      params['nom'] = this.searchInput.trim();
-    }
-
-    console.log('Search Params:', params); // Debug here
-    this.plantService.searchPlants(params).subscribe(
-      (data: Plant[]) => {
-        console.log('Filtered Plants:', data); // Debug here
-        this.filteredPlants = data;
-        this.currentPage = 1;
-      },
-      (error) => {
-        console.error('Error searching plants:', error);
+    const trimmedInput = this.searchInput.trim().toLowerCase();
+    this.filteredPlants = this.plants.filter(plant => {
+      // Vérifiez si l'entrée correspond à une région
+      if (plant.region.some(region => region.toLowerCase() === trimmedInput)) {
+        return true;
       }
-    );
+      // Vérifiez si l'entrée correspond à une propriété
+      if (plant.properties && plant.properties.some(prop => prop.toLowerCase() === trimmedInput)) {
+        return true;
+      }
+      // Vérifiez si l'entrée correspond à une utilisation
+      if (plant.uses && plant.uses.some(use => use.toLowerCase() === trimmedInput)) {
+        return true;
+      }
+      // Recherche par nom
+      return plant.name.toLowerCase().includes(trimmedInput);
+    });
+  
+    console.log('Filtered Plants:', this.filteredPlants); // Debug ici
+    this.currentPage = 1; // Réinitialiser à la première page
   }
 
   viewPlantDetails(plantId: number): void {

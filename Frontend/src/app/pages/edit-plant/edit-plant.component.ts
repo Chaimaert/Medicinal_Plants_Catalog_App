@@ -13,7 +13,6 @@ export class EditPlantComponent implements OnInit {
     name: '',
     description: '',
     articles: [],
-    comments: [],
     images: '',  // Pour gérer les fichiers d'image
     interactions: [],
     precautions: [],
@@ -44,27 +43,76 @@ export class EditPlantComponent implements OnInit {
   editPlant() {
     const plantId = this.route.snapshot.paramMap.get('id');
     if (plantId) {
-        console.log('Données à envoyer :', this.plantData); // Log pour débogage
-        this.plantService.editPlant(plantId, this.plantData).subscribe(
-            () => {
-                this.router.navigate(['/admin']); // Redirige après la mise à jour
-            },
-            error => {
-                console.error('Erreur lors de la mise à jour de la plante', error);
-            }
-        );
+      console.log('Données à envoyer :', this.plantData); // Log pour débogage
+      this.plantService.editPlant(plantId, this.plantData).subscribe(
+        () => {
+          this.router.navigate(['/admin']); // Redirige après la mise à jour
+        },
+        error => {
+          console.error('Erreur lors de la mise à jour de la plante', error);
+        }
+      );
     }
-}
-
+  }
 
   // Ajouter un nouvel article à la liste
   addArticle() {
     this.plantData.articles.push('');
   }
-  
+
   // Supprimer un article de la liste
   removeArticle(index: number) {
     this.plantData.articles.splice(index, 1);
+  }
+
+  // Ajouter une interaction à la liste
+  addInteraction() {
+    this.plantData.interactions.push('');
+  }
+
+  // Supprimer une interaction de la liste
+  removeInteraction(index: number) {
+    this.plantData.interactions.splice(index, 1);
+  }
+
+  // Ajouter une précaution à la liste
+  addPrecaution() {
+    this.plantData.precautions.push('');
+  }
+
+  // Supprimer une précaution de la liste
+  removePrecaution(index: number) {
+    this.plantData.precautions.splice(index, 1);
+  }
+
+  // Ajouter une propriété à la liste
+  addProperty() {
+    this.plantData.properties.push('');
+  }
+
+  // Supprimer une propriété de la liste
+  removeProperty(index: number) {
+    this.plantData.properties.splice(index, 1);
+  }
+
+  // Ajouter une région à la liste
+  addRegion() {
+    this.plantData.region.push('');
+  }
+
+  // Supprimer une région de la liste
+  removeRegion(index: number) {
+    this.plantData.region.splice(index, 1);
+  }
+
+  // Ajouter une utilisation à la liste
+  addUse() {
+    this.plantData.uses.push('');
+  }
+
+  // Supprimer une utilisation de la liste
+  removeUse(index: number) {
+    this.plantData.uses.splice(index, 1);
   }
 
   // Gérer le téléchargement de fichiers pour les images et les vidéos
