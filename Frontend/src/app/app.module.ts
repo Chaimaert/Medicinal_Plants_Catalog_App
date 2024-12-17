@@ -50,7 +50,7 @@ const routes: Routes = [
     RecommendationsComponent,
     AdminLoginComponent,
     AddPlantComponent,
-    AdminDashboardComponent,// <-- Make sure AddPlantComponent is listed here
+    AdminDashboardComponent,
     EditPlantComponent  // <-- Also ensure EditPlantComponent is declared
   ],
   imports: [

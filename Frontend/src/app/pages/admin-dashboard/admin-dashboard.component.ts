@@ -40,19 +40,29 @@ export class AdminDashboardComponent implements OnInit {
     this.router.navigate([`/admin/edit-plant/${id.toString()}`]); // Navigue vers la page d'édition de la plante
   }
 
-  // Delete plant
   deletePlant(id: number) {
-    this.plantService.deletePlant(id.toString()).subscribe(() => {
-      this.plants = this.plants.filter(plant => plant.id !== id); // Met à jour la liste après suppression
-    }, error => {
-      console.error('Erreur lors de la suppression de la plante', error);
-      // Gérer l'erreur ici si nécessaire
-    });
+    // Display a confirmation popup
+    const confirmDelete = window.confirm('Are you sure you want to delete this plant?');
+
+    // If admin confirms, proceed with deletion
+    if (confirmDelete) {
+      this.plantService.deletePlant(id.toString()).subscribe(() => {
+        // Filter the deleted plant from the list
+        this.plants = this.plants.filter(plant => plant.id !== id);
+        console.log('Plant deleted successfully!');
+      }, error => {
+        console.error('Error while deleting the plant', error);
+        // Optionally show an error message to the admin
+        alert('Failed to delete the plant. Please try again.');
+      });
+    } else {
+      console.log('Deletion cancelled by the admin.');
+    }
   }
+
 
   // Logout
   logout() {
-    // Ici vous pouvez appeler la méthode de déconnexion de votre backend si nécessaire
-    this.router.navigate(['/login']); // Navigue vers la page de connexion
+    this.router.navigate(['/login']);
   }
 }

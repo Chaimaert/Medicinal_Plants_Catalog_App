@@ -1,13 +1,13 @@
 // plant-management.service.ts
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlantManagementService {
-  private apiUrl = 'http://localhost:8080/admin/plantes'; 
+  private apiUrl = 'http://localhost:8080/admin/plantes';
 
   constructor(private http: HttpClient) {}
 
@@ -22,7 +22,7 @@ export class PlantManagementService {
   }
 
 
-  // Method to add a new plant
+  // Add a new plant
   addPlant(plantData: any): Observable<any> {
     return this.http.post<any>(this.apiUrl, plantData);
   }
@@ -36,5 +36,5 @@ export class PlantManagementService {
   deletePlant(id: string): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
-  
+
 }

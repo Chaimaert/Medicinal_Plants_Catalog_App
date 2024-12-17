@@ -47,7 +47,7 @@
   <div *ngFor="let plant of plantResult">
     <h3 class="plant-title">{{ plant.name }}</h3>
     <div class="plant-detail">
-      <img [src]="plant.image" alt="{{ plant.name }}" class="plant-image" />
+      <!-- <img [src]="plant.image" alt="{{ plant.name }}" class="plant-image" /> -->
       <div class="plant-info">
         <p><strong>Properties:</strong> {{ plant.properties.join(', ') }}</p>
         <p><strong>Uses:</strong> {{ plant.uses.join(', ') }}</p>

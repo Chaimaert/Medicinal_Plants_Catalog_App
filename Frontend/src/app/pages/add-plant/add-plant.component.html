@@ -2,73 +2,66 @@
   <form (ngSubmit)="addPlant()">
     <h2>Add a New Plant</h2>
 
-     <!-- Plant Name -->
-    <div>
-      <label for="name">Plant Name:</label>
-      <input type="text" id="name" [(ngModel)]="plantData.name" name="name" required>
-    </div>
+    <!-- Plant Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="plantData.name" name="name" required />
 
     <!-- Description -->
-    <div>
-      <label for="description">Description:</label>
-      <textarea id="description" [(ngModel)]="plantData.description" name="description" required></textarea>
-    </div>
-
-    <!-- Articles (URL) -->
-     <div>
-      <label for="articles">Articles (URL):</label>
-      <input type="text" id="articles" [(ngModel)]="plantData.articles" name="articles">
-    </div>
-
-    <!-- Precautions -->
-    <div>
-      <label for="precautions">Precautions:</label>
-      <textarea id="precautions" [(ngModel)]="plantData.precautions" name="precautions"></textarea>
-    </div>
+    <label for="description">Description:</label>
+    <textarea
+      id="description"
+      [(ngModel)]="plantData.description"
+      name="description"
+      required
+    ></textarea>
 
     <!-- Properties -->
-    <div>
-      <label for="properties">Properties:</label>
-      <textarea id="properties" [(ngModel)]="plantData.properties" name="properties"></textarea>
-    </div>
-
-    <!-- Region -->
-    <div>
-      <label for="region">Region:</label>
-      <input type="text" id="region" [(ngModel)]="plantData.region" name="region">
-    </div>
+    <label for="properties">Properties:</label>
+    <input type="text" id="properties" [(ngModel)]="plantData.properties" name="properties" />
 
     <!-- Uses -->
-   <div>
-      <label for="uses">Uses:</label>
-      <input type="text" id="uses" [(ngModel)]="plantData.uses" name="uses">
-    </div>
+    <label for="uses">Uses:</label>
+    <input type="text" id="uses" [(ngModel)]="plantData.uses" name="uses" />
 
-    <!-- Image Upload -->
-    <div>
-      <label for="image">Upload Image:</label>
-      <input type="file" id="image" (change)="onFileSelected($event, 'images')" name="image">
-    </div>
+    <!-- Region -->
+    <label for="region">Region:</label>
+    <input type="text" id="region" [(ngModel)]="plantData.region" name="region" />
 
-    <!-- Video Upload -->
-    <div>
-      <label for="video">Upload Video:</label>
-      <input type="file" id="video" (change)="onFileSelected($event, 'video')" name="video">
-    </div>
+    <!-- Precautions -->
+    <label for="precautions">Precautions:</label>
+    <input
+      type="text"
+      id="precautions"
+      [(ngModel)]="plantData.precautions"
+      name="precautions"
+    />
 
-    <!-- Submit Button -->
-    <div class="form-actions">
-      <button type="submit">Save</button>
-    </div>
+    <!-- Interactions -->
+    <label for="interactions">Interactions:</label>
+    <input
+      type="text"
+      id="interactions"
+      [(ngModel)]="plantData.interactions"
+      name="interactions"
+    />
+
+    <!-- Images -->
+    <label for="images">Images URL:</label>
+    <input type="text" id="images" [(ngModel)]="plantData.images" name="images" />
+
+    <!-- Articles -->
+    <label for="articles">Articles URL:</label>
+    <input type="text" id="articles" [(ngModel)]="plantData.articles" name="articles" />
+
+    <!-- Videos -->
+    <label for="videos">Videos URL:</label>
+    <input type="text" id="videos" [(ngModel)]="plantData.videos" name="videos" />
+
+    <!-- Submit -->
+    <button type="submit">Save</button>
   </form>
-  
-    <!-- Message d'erreur -->
-    <div *ngIf="errorMessage" class="error-message">
-      {{ errorMessage }}
-    </div>
 
-  <!-- Success Message -->
-  <div *ngIf="successMessage" class="success-message">
-    {{ successMessage }}
-  </div>
+  <!-- Messages -->
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  <div *ngIf="successMessage" class="success">{{ successMessage }}</div>
 </div>
