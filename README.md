@@ -78,10 +78,16 @@ Here is a summary of the main API endpoints:
 |--------|---------------------|------------------------------|
 | GET    | /plantes          | Get all plants     |
 | GET    | /plantes/{id}     | Get  plant by ID |
+| GET    | /plantes/recommandations  | Get plant recommandation|
+| GET    | /plantes/recherche-avancee  | filter plants|
+| GET    | /{planteId}/commentaires  | Get plant comments|
+| POST    | /{planteId}/commentaires  | Add a plant comment|
 | GET    | /admin/plantes     | Get all plants|
 | POST   | /admin/plantes          | Add a new plant  |
-| PUT | /api/plants/{id}     | Update a plant by ID |
+| PUT    | /plants/{id}     | Update a plant by ID |
 | DELETE | /api/plants/{id}     | Delete a plant by ID |
+| POST    | /admin/files/upload     | To add a picture or a video of a  plant|
+| GET    | /admin/files/{filename}   | Get all the pictures or videos of a  plant|
 
 ### Notes
 
