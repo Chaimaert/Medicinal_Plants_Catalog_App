@@ -11,6 +11,7 @@ This project aims to provide detailed insights into medicinal plants, including 
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
+- [Démonstration](#démonstration)
 
 ## Features
   - *Medicinal Plant Database*: Access a complete catalog with detailed information on each plant, including names, descriptions, properties, uses, and safety precautions.
@@ -97,3 +98,6 @@ Here is a summary of the main API endpoints:
 
 ### Contact
 For questions or feedback, feel free to reach out via GitHub Issues or mail.
+
+### Démonstration
+
