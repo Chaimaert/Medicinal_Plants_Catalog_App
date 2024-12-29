@@ -99,5 +99,5 @@ Here is a summary of the main API endpoints:
 ### Contact
 For questions or feedback, feel free to reach out via GitHub Issues or mail.
 
-### Démonstration
+## Démonstration
 
