@@ -95,17 +95,15 @@ Here is a summary of the main API endpoints:
 ### Notes
 
   - *Admin Endpoints (/admin/plantes)*: These endpoints are restricted to the ADMIN role. Make sure to authenticate as an Admin before using them.
-  - *Public Endpoints (/plantes)*: These endpoints are accessible to all users without authentication.
-
-
-### Contact
-For questions or feedback, feel free to reach out via GitHub Issues or mail.
+  - *Public Endpoints (/plantes)*: These endpoints are accessible to all users without authentication.[Uploading Delivery Slip - Nihal Tizgha - WH_IN_00003.pdf…]()
 
 ## Web Demo
 
 https://github.com/user-attachments/assets/160cd027-41e1-468c-8710-e37d20a4ad90
 
-
-
 ## Mobile Demo
 
+https://github.com/user-attachments/assets/ade4c34d-6a42-4f8e-892f-eaf672c4d76d
+
+### Contact
+For questions or feedback, feel free to reach out via GitHub Issues or mail.
