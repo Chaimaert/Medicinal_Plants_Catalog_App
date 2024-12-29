@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "475933883372",
+    "project_id": "catalogueplantes",
+    "storage_bucket": "catalogueplantes.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475933883372:android:698d7083f90202fe081ec9",
+        "android_client_info": {
+          "package_name": "com.example.catalogue_plantes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHNNepJ0PShL7ZulNcEmi1IMW_FSUTPik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

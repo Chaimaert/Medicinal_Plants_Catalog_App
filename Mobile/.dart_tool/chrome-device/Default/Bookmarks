@@ -1,0 +1,51 @@
+{
+   "checksum": "b1af4bf657489ea83895dbe4ca7e9687",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13335263995585444",
+            "date_last_used": "0",
+            "guid": "c586bb45-c0ec-4cca-888d-5da731744b73",
+            "id": "6",
+            "name": "Rapport de stage : le plan d'un rapport de stage",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.scribbr.fr/category/rapport-de-stage/",
+            "visit_count": 0
+         } ],
+         "date_added": "13375487451524717",
+         "date_last_used": "0",
+         "date_modified": "13335263995585444",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barre des favoris",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13375487451524720",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Autres favoris",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13375487451524723",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoris de l’appareil mobile",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCBWvcgiTAQAAKg4QABgBIAAoBTAAOABAABIAKhhsYmt0RGtjVmhUajhjVFU1bFBxNjN3PT1IA6AGDBKsAQgGEqcBChxxYTE5RVFNeERqOXVoV2dsbnhZK0k2NEprZXM9EiRjNTg2YmI0NS1jMGVjLTRjY2EtODg4ZC01ZGE3MzE3NDRiNzMYACAAKAAwhrXPguwxOOm+z4LsMUDpvs+C7DFKHFhvQnlPVnIvWUdKeVZ2czRnVFNCNThXd3Bybz1aHiIcTjM2T0E2Wnlncm1TRFBaVUN3eVQ3S1Ribkk0PWWRZxmgwj4CYAUSjgEIARKJAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkYzA5MzZhYWEtMThiMy01MzhkLWI4MzMtZjBiNTk4NjI4Zjg5GAAgACgAMP6qrqvrMTiPsq6r6zFAj7Kuq+sxShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9WgBlAAAAAMI+AmAAEo4BCAISiQEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJGQzZjZjMzkyLWI2ODctNTQ2MS1hYjlkLWNlNGY1YjllMjZjMhgAIAAoADD/qq6r6zE4vLKuq+sxQLyyrqvrMUocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAADCPgJgABKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQyNzg4MDA4My1iMGM4LTU2YjAtYjUxMy1mY2Q5ZTdmNzNjOGQYACAAKAAwhKuuq+sxOIGzrqvrMUCBs66r6zFKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAAwADgA",
+   "version": 1
+}
