@@ -103,6 +103,9 @@ For questions or feedback, feel free to reach out via GitHub Issues or mail.
 
 ## Web Demo
 
+https://github.com/user-attachments/assets/160cd027-41e1-468c-8710-e37d20a4ad90
+
+
 
 ## Mobile Demo
 
