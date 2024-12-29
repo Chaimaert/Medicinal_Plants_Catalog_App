@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 @RequestMapping("/admin/files")
 public class FileUploadController {
 
-    private static final String UPLOAD_DIR = "D:\\projects\\Medicinal_Plants_Catalog_App\\Backend\\uploads\\";
+    private static final String UPLOAD_DIR = "D:\\intellijworkspace\\Medicinal_Plants_Catalog\\Medicinal_Plants_Catalog_App\\Backend\\uploads";
 
     @PostMapping("/upload")
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
