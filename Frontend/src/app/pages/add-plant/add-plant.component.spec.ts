@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms'; // Required for ngModel
+import { FormsModule } from '@angular/forms';
 import { AddPlantComponent } from './add-plant.component';
 
 describe('AddPlantComponent', () => {
@@ -8,8 +8,8 @@ describe('AddPlantComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AddPlantComponent], // Declare the component here
-      imports: [FormsModule] // Import FormsModule for ngModel to work
+      declarations: [AddPlantComponent],
+      imports: [FormsModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AddPlantComponent);

@@ -11,7 +11,7 @@ import { Plant } from '../../models/plant.model';
 export class PlantListComponent implements OnInit {
   plants: Plant[] = [];
   filteredPlants: Plant[] = [];
-  searchInput: string = ''; // For the single search input
+  searchInput: string = '';
   currentPage: number = 1;
   itemsPerPage: number = 8;
 
@@ -28,32 +28,29 @@ export class PlantListComponent implements OnInit {
     });
   }
 
-  
+
   searchPlants(): void {
     const trimmedInput = this.searchInput.trim().toLowerCase();
     this.filteredPlants = this.plants.filter(plant => {
-      // Vérifiez si l'entrée correspond à une région
       if (plant.region.some(region => region.toLowerCase() === trimmedInput)) {
         return true;
       }
-      // Vérifiez si l'entrée correspond à une propriété
       if (plant.properties && plant.properties.some(prop => prop.toLowerCase() === trimmedInput)) {
         return true;
       }
-      // Vérifiez si l'entrée correspond à une utilisation
       if (plant.uses && plant.uses.some(use => use.toLowerCase() === trimmedInput)) {
         return true;
       }
       // Recherche par nom
       return plant.name.toLowerCase().includes(trimmedInput);
     });
-  
-    console.log('Filtered Plants:', this.filteredPlants); // Debug ici
-    this.currentPage = 1; // Réinitialiser à la première page
+
+    console.log('Filtered Plants:', this.filteredPlants);
+    this.currentPage = 1;
   }
 
   viewPlantDetails(plantId: number): void {
-    this.router.navigate(['/plant-details', plantId]); // Navigate to the plant details page
+    this.router.navigate(['/plant-details', plantId]); 
   }
 
   getPaginatedPlants(): Plant[] {

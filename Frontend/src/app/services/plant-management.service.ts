@@ -23,8 +23,8 @@ export class PlantManagementService {
 
 
   // Add a new plant
-  addPlant(plantData: any): Observable<any> {
-    return this.http.post<any>(this.apiUrl, plantData);
+  addPlant(plant: any) {
+    return this.http.post(this.apiUrl, plant);
   }
 
   // Method to update an existing plant

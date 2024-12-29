@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./admin-dashboard.component.css']
 })
 export class AdminDashboardComponent implements OnInit {
-  plants: any[] = []; // Initialisez comme un tableau vide
+  plants: any[] = [];
 
   constructor(
     private plantService: PlantManagementService,
@@ -17,42 +17,48 @@ export class AdminDashboardComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.loadPlants(); // Charge les plantes lors de l'initialisation
+    this.loadPlants();
   }
 
   loadPlants() {
-    this.plantService.getPlants().subscribe(data => {
-      this.plants = data; // Affecte les données récupérées à la variable `plants`
-    }, error => {
-      console.error('Erreur lors de la récupération des plantes', error);
-      // Vous pouvez afficher un message d'erreur à l'utilisateur ici
-    });
+    this.plantService.getPlants().subscribe(
+      (data) => {
+        this.plants = data.map((plant: any) => {
+          return {
+            ...plant,
+            image: plant.images && plant.images.length > 0 ? plant.images[0] : 'assets/default-image.jpg',
+          };
+        });
+        console.log('Mapped plants with image URLs:', this.plants);
+      },
+      (error) => {
+        console.error('Error fetching plants:', error);
+      }
+    );
   }
 
-  // Navigate to add plant form
+  // add plant form
   addPlant() {
-    this.router.navigate(['/admin/add-plant']); // Navigue vers la page d'ajout de plante
+    this.router.navigate(['/admin/add-plant']);
   }
 
-  // Navigate to edit plant form (convert id to string)
+  //edit plant form
   editPlant(id: number) {
-    console.log('Edit button clicked, navigating to edit page with ID:', id); // Log pour le débogage
-    this.router.navigate([`/admin/edit-plant/${id.toString()}`]); // Navigue vers la page d'édition de la plante
+    console.log('Edit button clicked, navigating to edit page with ID:', id);
+    this.router.navigate([`/admin/edit-plant/${id.toString()}`]);
   }
 
   deletePlant(id: number) {
-    // Display a confirmation popup
+
     const confirmDelete = window.confirm('Are you sure you want to delete this plant?');
 
-    // If admin confirms, proceed with deletion
+
     if (confirmDelete) {
       this.plantService.deletePlant(id.toString()).subscribe(() => {
-        // Filter the deleted plant from the list
         this.plants = this.plants.filter(plant => plant.id !== id);
         console.log('Plant deleted successfully!');
       }, error => {
         console.error('Error while deleting the plant', error);
-        // Optionally show an error message to the admin
         alert('Failed to delete the plant. Please try again.');
       });
     } else {
