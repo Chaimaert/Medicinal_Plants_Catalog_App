@@ -103,7 +103,8 @@ https://github.com/user-attachments/assets/160cd027-41e1-468c-8710-e37d20a4ad90
 
 ## Mobile Demo
 
-https://github.com/user-attachments/assets/ade4c34d-6a42-4f8e-892f-eaf672c4d76d
+https://github.com/user-attachments/assets/e097bda7-c8b2-4e67-8b19-f3716c959c19
 
 ### Contact
+
 For questions or feedback, feel free to reach out via GitHub Issues or mail.
