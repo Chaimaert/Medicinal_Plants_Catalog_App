@@ -4,14 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a44ca4-d338-4c08-b187-2b53ccbdb236" name="Changes" comment="" />
+    <list default="true" id="7e5d2583-28b0-460b-b24d-789bbe61b791" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="latifa" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -19,12 +32,12 @@
     &quot;assignee&quot;: &quot;Chaimaert&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Chaimaert/Naturalis_Backend.git&quot;,
-    &quot;accountId&quot;: &quot;924903b7-92f1-4c9b-8208-c3abad6edaf6&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Chaimaert/Medicinal_Plants_Catalog_App.git",
+    "accountId": "924903b7-92f1-4c9b-8208-c3abad6edaf6"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -33,30 +46,172 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2qSQK63S11jNLEJqHJpGuE5v9gU" />
+  <component name="ProjectId" id="2oLR59PVqM26BMbVYkuHkINCGcm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CataloguePlantesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommentaireControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommentaireControllerTest.testGetCommentaires_Empty.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.com.example.Plantes.dto in CataloguePlantes.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CataloguePlantesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/Medicinal_Plants_Catalog_App/Backend/uploads&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;two.files.diff.last.used.folder&quot;: &quot;D:/intellijworkspace/CataloguePlantes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\Medicinal_Plants_Catalog_App\Backend\uploads" />
+      <recent name="D:\intellijworkspace\CataloguePlantes\CataloguePlantes\Backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\Medicinal_Plants_Catalog_App\Backend\uploads" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CataloguePlantesApplication">
+    <configuration name="CataloguePlantesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.Plantes.CataloguePlantesApplication" />
+      <module name="CataloguePlantes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Plantes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentaireControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CataloguePlantes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Plantes.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Plantes.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Plantes.test.CommentaireControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentaireControllerTest.testGetCommentaires_Empty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CataloguePlantes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Plantes.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Plantes.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Plantes.test.CommentaireControllerTest" />
+      <option name="METHOD_NAME" value="testGetCommentaires_Empty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.Plantes.dto in CataloguePlantes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CataloguePlantes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Plantes.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Plantes.dto" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CataloguePlantesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="CataloguePlantes" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Plantes.CataloguePlantesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CataloguePlantesApplication" />
+        <item itemvalue="JUnit.CommentaireControllerTest.testGetCommentaires_Empty" />
+        <item itemvalue="JUnit.CommentaireControllerTest" />
+        <item itemvalue="JUnit.com.example.Plantes.dto in CataloguePlantes" />
+        <item itemvalue="JUnit.CommentaireControllerTest.testGetCommentaires_Empty" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b1a44ca4-d338-4c08-b187-2b53ccbdb236" name="Changes" comment="" />
-      <created>1734653433753</created>
+      <changelist id="7e5d2583-28b0-460b-b24d-789bbe61b791" name="Changes" comment="" />
+      <created>1730646684265</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1734653433753</updated>
+      <updated>1730646684265</updated>
+      <workItem from="1730646685759" duration="12440000" />
+      <workItem from="1730724289543" duration="5000" />
+      <workItem from="1730798725948" duration="2496000" />
+      <workItem from="1730801619379" duration="661000" />
+      <workItem from="1730915199892" duration="9977000" />
+      <workItem from="1731062989542" duration="3360000" />
+      <workItem from="1731089438594" duration="16113000" />
+      <workItem from="1731164503025" duration="2687000" />
+      <workItem from="1731168848009" duration="28000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
